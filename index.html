@@ -119,28 +119,41 @@ footer{border-top:1px solid var(--line);padding:26px 0}.ft{display:flex;justify-
 @media(max-width:560px){.quote{padding:36px 22px}}
 .qg{display:grid;grid-template-columns:1.25fr 1fr;gap:16px}.qg .quote{padding:40px 34px}@media(max-width:900px){.qg{grid-template-columns:1fr}}
 
-/* ===== galaxy ===== */
-#galaxy{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
-.nebula{position:fixed;inset:-20%;z-index:-1;pointer-events:none;background:radial-gradient(40% 35% at 20% 25%,rgba(124,92,255,.20),transparent 70%),radial-gradient(38% 34% at 80% 20%,rgba(67,214,197,.18),transparent 70%),radial-gradient(45% 40% at 60% 85%,rgba(99,102,241,.16),transparent 72%),radial-gradient(30% 28% at 10% 80%,rgba(236,72,153,.07),transparent 70%);filter:blur(30px);animation:neb 40s ease-in-out infinite alternate}
-@keyframes neb{0%{transform:translate(0,0) rotate(0) scale(1)}100%{transform:translate(3%,-2%) rotate(6deg) scale(1.08)}}
-@keyframes spin{to{transform:rotate(360deg)}}
-.hero:after{content:"";position:absolute;width:780px;height:780px;left:-280px;bottom:-340px;border-radius:50%;background:conic-gradient(from 0deg,transparent,rgba(124,92,255,.24) 12%,transparent 25%,rgba(67,214,197,.22) 50%,transparent 62%,rgba(139,92,246,.2) 80%,transparent);filter:blur(48px);animation:spin 90s linear infinite;pointer-events:none}
-h1 span{text-shadow:0 0 42px rgba(67,214,197,.4)}
-.card{background:linear-gradient(145deg,rgba(13,27,32,.78),rgba(13,27,32,.5));backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
-.tile{background:rgba(13,27,32,.62);backdrop-filter:blur(6px)}
-#projects{background:rgba(255,255,255,.012)!important}
-@media(prefers-reduced-motion:reduce){.nebula,.hero:after{animation:none}}
+
+/* ===== digital marketing theme ===== */
+.hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(67,214,197,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(67,214,197,.05) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:linear-gradient(to bottom,#000 20%,transparent 92%);mask-image:linear-gradient(to bottom,#000 20%,transparent 92%);pointer-events:none}
+.hero .container{position:relative;z-index:1}
+.mkt{position:absolute;left:0;right:0;bottom:0;width:100%;height:46%;pointer-events:none;opacity:.55}
+.mkt .ln{fill:none;stroke:url(#mg);stroke-width:3;stroke-dasharray:2400;stroke-dashoffset:2400;animation:draw 3.8s .4s ease forwards}
+.mkt .ar{opacity:0;animation:fade 1.6s 2.4s ease forwards}.mkt circle{fill:#071014;stroke:#43d6c5;stroke-width:3;opacity:0;animation:fade .6s ease forwards}
+.mkt circle:nth-of-type(1){animation-delay:1.2s}.mkt circle:nth-of-type(2){animation-delay:1.9s}.mkt circle:nth-of-type(3){animation-delay:2.6s}.mkt circle:nth-of-type(4){animation-delay:3.3s;fill:#43d6c5}
+@keyframes draw{to{stroke-dashoffset:0}}@keyframes fade{to{opacity:1}}
+.hk{position:absolute;z-index:2;display:flex;align-items:center;gap:10px;padding:11px 14px;border:1px solid rgba(67,214,197,.28);border-radius:14px;background:rgba(10,23,28,.92);backdrop-filter:blur(14px);font-size:12px}
+.hk i{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(67,214,197,.12);color:var(--a)}.hk b{display:block;font-size:12px}.hk span{color:var(--muted);font-size:11px}
+.hk.k1{left:-34px;top:42%;animation:fl 7s ease-in-out -1s infinite}.hk.k2{right:-24px;bottom:96px;animation:fl 8s ease-in-out -3s infinite}
+.ticker{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(67,214,197,.04);padding:14px 0;direction:ltr}
+.tk{display:flex;width:max-content;animation:tick 42s linear infinite}.tk span{display:inline-flex;align-items:center;gap:14px;padding:0 22px;font:600 13px "Space Grotesk",sans-serif;letter-spacing:1.2px;color:#b9c9cd;text-transform:uppercase;white-space:nowrap}
+.tk span:after{content:"\25C6";color:var(--a);font-size:8px}@keyframes tick{to{transform:translateX(-50%)}}
+.qg{grid-template-columns:1fr 1fr!important}.qg .quote{padding:38px 30px 28px}.qg .quote blockquote{font-size:clamp(16px,1.5vw,18.5px);line-height:1.6;margin:18px 0 22px}
+.qg .quote figcaption{margin-top:auto}.qg .quote{display:flex;flex-direction:column}.qg .btn{padding:9px 14px}
+.vfy{display:inline-flex;gap:7px;align-items:center;margin-top:8px;font-size:12px;font-weight:700;color:var(--a)}.vfy:hover{text-decoration:underline}
+.cform{max-width:640px;margin:44px auto 0;text-align:start;padding:30px}.cform .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cform label{display:block;font-size:12px;font-weight:600;color:#c9d6d9;margin-bottom:14px}.cform input,.cform textarea{display:block;width:100%;margin-top:6px;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);font:inherit;font-size:14px}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--a);box-shadow:0 0 0 3px rgba(67,214,197,.14)}.cform textarea{resize:vertical}
+.cform .btn{border:0;cursor:pointer}.fnote{font-size:12px;color:var(--muted);margin-top:12px}.fnote.ok{color:var(--a2)}.fnote.er{color:#ffb4a8}
+@media(max-width:900px){.qg{grid-template-columns:1fr!important}}@media(max-width:560px){.cform .row{grid-template-columns:1fr}.hk{display:none}}
+@media(prefers-reduced-motion:reduce){.mkt .ln{stroke-dashoffset:0;animation:none}.mkt .ar,.mkt circle{opacity:1;animation:none}.tk{animation:none}}
 </style>
 </head>
 <body>
 <div id="prog"></div>
-<div class="nebula" aria-hidden="true"></div><canvas id="galaxy" aria-hidden="true"></canvas>
 <a class="skip" href="#main">Skip to content</a>
 <header><div class="container"><nav aria-label="Main"><a class="brand" href="#home"><img src="logo.jpg" alt="Umer Ilyas logo" width="38" height="38">Umer<em>.</em></a>
 <ul class="nl" id="nl"><li><a href="#about">About</a></li><li><a href="#skills">Expertise</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#campaigns">Campaigns</a></li><li><a href="#tech">Technology</a></li><li><a class="cta-n" href="#contact">Hire me</a></li><li><button class="lang" id="lang" type="button" aria-label="Change language"><i class="fa-solid fa-globe"></i><span>العربية</span></button></li></ul>
 <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button></nav></div></header>
 <main id="main">
-<section class="hero" id="home"><div class="container"><div class="hg"><div>
+<section class="hero" id="home"><svg class="mkt" viewBox="0 0 1440 400" preserveAspectRatio="xMaxYMax slice" aria-hidden="true"><defs><linearGradient id="mg" x1="0" x2="1"><stop offset="0" stop-color="#43d6c5" stop-opacity="0"/><stop offset=".35" stop-color="#43d6c5"/><stop offset="1" stop-color="#9af3e5"/></linearGradient><linearGradient id="mf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#43d6c5" stop-opacity=".22"/><stop offset="1" stop-color="#43d6c5" stop-opacity="0"/></linearGradient></defs><path class="ar" d="M0 365 L130 340 L260 352 L400 300 L540 312 L700 240 L840 262 L1000 180 L1140 200 L1290 100 L1440 48 V400 H0Z" fill="url(#mf)"/><path class="ln" d="M0 365 L130 340 L260 352 L400 300 L540 312 L700 240 L840 262 L1000 180 L1140 200 L1290 100 L1440 48"/><circle cx="700" cy="240" r="7"/><circle cx="1000" cy="180" r="7"/><circle cx="1290" cy="100" r="7"/><circle cx="1428" cy="52" r="9"/></svg>
+<div class="container"><div class="hg"><div>
 <h1>Muhammad<br><span>Umer Ilyas</span></h1>
 <div class="role">DIGITAL MARKETING MANAGER · SEO SPECIALIST · WORDPRESS DEVELOPER · PAID ADS STRATEGIST</div>
 <p class="pitch">I plan the strategy, build the website and run the campaigns, so your digital channel has one accountable owner.</p>
@@ -150,9 +163,11 @@ h1 span{text-shadow:0 0 42px rgba(67,214,197,.4)}
 <a class="btn out" href="https://www.linkedin.com/in/umer-ilyas786/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a></div>
 <div class="trust"><span><i class="fa-solid fa-circle-check"></i>Currently Digital Marketing Manager</span><span><i class="fa-solid fa-circle-check"></i>Open to relocation</span><span><i class="fa-solid fa-circle-check"></i>English &amp; Urdu</span></div>
 </div><div class="hs"><img class="profile" src="profile.jpg" alt="Portrait of Muhammad Umer Ilyas" width="380" height="490">
+<div class="hk k1"><i class="fa-solid fa-arrow-trend-up"></i><div><b>Organic growth</b><span>SEO · Content · Links</span></div></div><div class="hk k2"><i class="fa-solid fa-bullhorn"></i><div><b>Paid campaigns</b><span>Meta · Google · TikTok</span></div></div>
 <div class="hc"><strong>5+</strong><small>Years of hands-on digital marketing experience</small></div>
 <div class="hm"><b>International experience</b><span>UK · UAE · GCC</span></div></div></div></div></section>
 
+<div class="ticker" aria-hidden="true"><div class="tk"><span>SEO</span><span>Google Ads</span><span>Meta Ads</span><span>TikTok Ads</span><span>CRO</span><span>GA4</span><span>Lead Generation</span><span>Content Strategy</span><span>Social Media</span><span>WordPress</span><span>Analytics</span><span>Technical SEO</span><span>SEO</span><span>Google Ads</span><span>Meta Ads</span><span>TikTok Ads</span><span>CRO</span><span>GA4</span><span>Lead Generation</span><span>Content Strategy</span><span>Social Media</span><span>WordPress</span><span>Analytics</span><span>Technical SEO</span></div></div>
 <div class="stats"><div class="container"><div class="sg"><div class="stat"><strong>5+</strong><span>Years experience</span></div><div class="stat"><strong>20+</strong><span>Projects &amp; client accounts</span></div><div class="stat"><strong>3</strong><span>Paid ad platforms</span></div><div class="stat"><strong>BSSE</strong><span>Technical foundation</span></div></div></div></div>
 
 <section id="value"><div class="container"><div class="eyebrow">What I bring to your team</div><h2 class="st">Four things a hiring manager needs covered.</h2>
@@ -179,14 +194,10 @@ h1 span{text-shadow:0 0 42px rgba(67,214,197,.4)}
 <div class="job"><div class="date">SEP 2022 — OCT 2024</div><h3>SEO Specialist &amp; WordPress Developer</h3><div class="co">Outright Pakistan · Islamabad</div><ul><li>Conducted keyword research, technical SEO audits, on-page optimisation and link building.</li><li>Built and optimised WordPress business websites focused on speed, security and conversions.</li><li>Improved Google rankings and organic traffic for UK and global clients.</li><li>Configured WordPress plugins, backups, security and performance tools.</li><li>Delivered measurable growth through SEO-driven content and site optimisation.</li></ul></div>
 <div class="job"><div class="date">NOV 2020 — SEP 2024</div><h3>WordPress Developer &amp; SEO Expert</h3><div class="co">Silver Tech Valley · Haripur, Pakistan</div><p>Built SEO-friendly websites, landing pages and lead-generation funnels, applying CRO and tracking KPIs.</p></div>
 <div class="job"><div class="date">FEB 2020 — SEP 2020</div><h3>Customer Care &amp; IT Support Associate</h3><div class="co">CMPak (Zong) · Islamabad</div><p>Customer support and sales assistance, working with IT teams on troubleshooting and escalations.</p></div></div>
-<div class="card edu"><div class="ic" style="margin:0"><i class="fa-solid fa-graduation-cap"></i></div><div><h3>BS Software Engineering</h3><p>University of Haripur · 2015 — 2019</p></div></div><div class="card edu" style="margin-top:14px"><div class="ic" style="margin:0"><i class="fa-solid fa-certificate"></i></div><div><h3>Fundamentals of Digital Marketing</h3><p>Google · Issued Jul 2024</p></div></div></div></section>
+<div class="card edu"><div class="ic" style="margin:0"><i class="fa-solid fa-graduation-cap"></i></div><div><h3>BS Software Engineering</h3><p>University of Haripur · 2015 — 2019</p></div></div><div class="card edu" style="margin-top:14px"><div class="ic" style="margin:0"><i class="fa-solid fa-certificate"></i></div><div><h3>Fundamentals of Digital Marketing</h3><p>Google · Issued Jul 2024 · Credential ID 305342438</p><a class="vfy" href="https://skillshop.exceedlms.com/student/award/QFJt9n91ebayN5BHqgYp3fzC" target="_blank" rel="noopener"><i class="fa-solid fa-circle-check"></i>Verify credential</a></div></div></div></section>
 
 <section id="recommendation"><div class="container"><div class="eyebrow">Recommendation</div><h2 class="st">What colleagues say.</h2>
-<div class="qg"><figure class="card quote"><i class="fa-solid fa-quote-left qi" aria-hidden="true"></i>
-<blockquote>I had the pleasure of working with Muhammad Umer Ilyas. He is a highly skilled Digital Marketing Manager with strong expertise in SEO, Paid Media, and WordPress Development. His grip on Technical SEO and Google &amp; Meta Ads is exceptional. He is results-driven, professional, and truly understands GCC &amp; International Markets. Highly recommended!</blockquote>
-<figcaption><div><strong>Awais Mir</strong><span>CEO &amp; Co-Founder, ProVoice</span><small>Managed Umer directly · LinkedIn recommendation</small></div><a class="btn out" href="https://www.linkedin.com/in/awais-mir-112a1321b/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>View on LinkedIn</a></figcaption></figure><figure class="card quote"><i class="fa-solid fa-quote-left qi" aria-hidden="true"></i>
-<blockquote>I had the opportunity to work directly under Muhammad Umer Ilyas, CTO at SMC TECH. He is a supportive, knowledgeable, and inspiring leader whose guidance helped me grow both technically and professionally. I truly value his mentorship and highly recommend him as an exceptional technology leader.</blockquote>
-<figcaption><div><strong>Zaid Ahmad</strong><span>Team member</span><small>Reported to Umer directly · LinkedIn recommendation</small></div></figcaption></figure></div></div></section>
+<div class="qg"><figure class="card quote"><i class="fa-solid fa-quote-left qi" aria-hidden="true"></i><blockquote>I had the pleasure of working with Muhammad Umer Ilyas. He is a highly skilled Digital Marketing Manager with strong expertise in SEO, Paid Media, and WordPress Development. His grip on Technical SEO and Google &amp; Meta Ads is exceptional. He is results-driven, professional, and truly understands GCC &amp; International Markets. Highly recommended!</blockquote><figcaption><div><strong>Awais Mir</strong><span>CEO &amp; Co-Founder, ProVoice</span><small>Managed Umer directly · LinkedIn recommendation</small></div><a class="btn out" href="https://www.linkedin.com/in/awais-mir-112a1321b/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>View on LinkedIn</a></figcaption></figure><figure class="card quote"><i class="fa-solid fa-quote-left qi" aria-hidden="true"></i><blockquote>I had the opportunity to work directly under Muhammad Umer Ilyas, CTO at SMC TECH. He is a supportive, knowledgeable, and inspiring leader whose guidance helped me grow both technically and professionally. I truly value his mentorship and highly recommend him as an exceptional technology leader.</blockquote><figcaption><div><strong>Zaid Ahmad</strong><span>Team member</span><small>Reported to Umer directly · LinkedIn recommendation</small></div><a class="btn out" href="https://www.linkedin.com/in/zaid-ahmad-0121a2245/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>View on LinkedIn</a></figcaption></figure><figure class="card quote"><i class="fa-solid fa-quote-left qi" aria-hidden="true"></i><blockquote>I had the opportunity to work with Muhammad Umer at SMC Tech, and I found him to be a highly professional, reliable, and results-driven colleague. He consistently demonstrated strong technical skills, problem-solving ability, and a willingness to take ownership of his work. Umer communicates clearly, works well with the team, and approaches challenges with a positive and solution-oriented mindset. I would highly recommend him to any organization looking for a dedicated and capable professional.</blockquote><figcaption><div><strong>Fahad Gul</strong><span>Team Lead · Full Stack Developer</span><small>Worked with Umer on the same team · LinkedIn recommendation</small></div><a class="btn out" href="https://www.linkedin.com/in/fahad-gul-865481140/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>View on LinkedIn</a></figcaption></figure><figure class="card quote"><i class="fa-solid fa-quote-left qi" aria-hidden="true"></i><blockquote>He is an exceptional WP developer and can bring ideas to life. Such a great person</blockquote><figcaption><div><strong>Jawad Ahmad</strong><span>Marketing Manager · SEO Specialist</span><small>Senior colleague · LinkedIn recommendation · March 2023</small></div><a class="btn out" href="https://www.linkedin.com/in/jawad-ahmad11/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>View on LinkedIn</a></figcaption></figure></div></div></section>
 
 <section id="projects" style="background:rgba(255,255,255,.015)"><div class="container"><div class="eyebrow">Portfolio</div><h2 class="st">Selected projects.</h2>
 <p class="intro">Each card states my contribution. Filter by area to see the work most relevant to the role you are hiring for.</p>
@@ -206,7 +217,12 @@ h1 span{text-shadow:0 0 42px rgba(67,214,197,.4)}
 <div class="btns" style="justify-content:center"><a class="btn pri" href="mailto:umerilyas667@gmail.com?subject=Opportunity%20for%20Muhammad%20Umer%20Ilyas"><i class="fa-regular fa-envelope"></i>Email me</a>
 <a class="btn out" href="Muhammad-Umer-Ilyas-CV.pdf" download><i class="fa-solid fa-file-arrow-down"></i>Download CV</a>
 <a class="btn out" href="https://www.linkedin.com/in/umer-ilyas786/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>Connect on LinkedIn</a></div>
-<div class="steps"><span><b>1.</b> Send a message</span><span><b>2.</b> Share the role details</span><span><b>3.</b> We discuss fit and next steps</span></div></div></section>
+<div class="steps"><span><b>1.</b> Send a message</span><span><b>2.</b> Share the role details</span><span><b>3.</b> We discuss fit and next steps</span></div><form class="card cform" id="cform" novalidate><div class="eyebrow" style="text-align:center">Or send me a message here</div>
+<div class="row"><label>Your name<input name="name" required autocomplete="name"></label><label>Your email<input type="email" name="email" required autocomplete="email"></label></div>
+<label>Company or role (optional)<input name="company"></label>
+<label>Message<textarea name="message" rows="4" required></textarea></label>
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"><input type="hidden" name="_subject" value="New message from your portfolio"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table">
+<button class="btn pri" type="submit"><i class="fa-regular fa-paper-plane"></i>Send message</button><div class="fnote" id="fnote" role="status" aria-live="polite">Your message goes straight to my email.</div></form></div></section>
 </main>
 <footer><div class="container ft"><p>© <span id="yr"></span> Muhammad Umer Ilyas · umerilyas667@gmail.com</p><div class="soc"><a href="https://www.linkedin.com/in/umer-ilyas786/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="mailto:umerilyas667@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a></div></div></footer>
 <div class="float"><a class="btn pri" href="Muhammad-Umer-Ilyas-CV.pdf" download><i class="fa-solid fa-download"></i>CV</a><a class="btn out" href="mailto:umerilyas667@gmail.com?subject=Opportunity%20for%20Muhammad%20Umer%20Ilyas"><i class="fa-regular fa-envelope"></i>Email</a></div>
@@ -318,6 +334,13 @@ const AR={"About":"نبذة عني","Expertise":"الخبرات","Experience":"�
 "Contracting company website for a Saudi Arabia-based client, built in both English and Arabic.":"موقع لشركة مقاولات لعميل في المملكة العربية السعودية، مبني بالإنجليزية والعربية.","Website development of the English and Arabic versions.":"تطوير النسختين الإنجليزية والعربية من الموقع.","English & Arabic":"الإنجليزية والعربية",
 "E-commerce website for a food business with a wide menu of categories.":"متجر إلكتروني لنشاط أغذية بقائمة واسعة من الأصناف.","E-commerce website development.":"تطوير متجر إلكتروني.","E-commerce":"تجارة إلكترونية",
 "Medicare enrolment landing page":"صفحة هبوط للتسجيل في ميديكير","High-converting lead-capture landing page for Medicare enrolment.":"صفحة هبوط عالية التحويل لجمع العملاء المحتملين للتسجيل في ميديكير.","Design and build with WordPress and Elementor Pro.":"التصميم والبناء باستخدام ووردبريس وElementor Pro.","Lead capture":"جمع العملاء المحتملين",
+"Organic growth":"نمو عضوي","SEO · Content · Links":"SEO · المحتوى · الروابط","Meta · Google · TikTok":"ميتا · جوجل · تيك توك",
+"I had the opportunity to work with Muhammad Umer at SMC Tech, and I found him to be a highly professional, reliable, and results-driven colleague. He consistently demonstrated strong technical skills, problem-solving ability, and a willingness to take ownership of his work. Umer communicates clearly, works well with the team, and approaches challenges with a positive and solution-oriented mindset. I would highly recommend him to any organization looking for a dedicated and capable professional.":"أتيحت لي فرصة العمل مع محمد عمر في SMC Tech، ووجدته زميلًا محترفًا للغاية ويُعتمد عليه ويركّز على النتائج. أظهر باستمرار مهارات تقنية قوية وقدرة على حل المشكلات واستعدادًا لتحمّل مسؤولية عمله. يتواصل عمر بوضوح، ويعمل جيدًا مع الفريق، ويتعامل مع التحديات بعقلية إيجابية تركّز على الحلول. أوصي به بشدة لأي مؤسسة تبحث عن محترف مخلص وكفء.",
+"He is an exceptional WP developer and can bring ideas to life. Such a great person":"هو مطوّر ووردبريس استثنائي ويستطيع تحويل الأفكار إلى واقع. شخص رائع حقًا.",
+"Fahad Gul":"Fahad Gul","Jawad Ahmad":"Jawad Ahmad","Team Lead · Full Stack Developer":"قائد فريق · مطوّر Full Stack","Marketing Manager · SEO Specialist":"مدير تسويق · أخصائي SEO",
+"Worked with Umer on the same team · LinkedIn recommendation":"عمل مع عمر ضمن الفريق نفسه · توصية على لينكدإن","Senior colleague · LinkedIn recommendation · March 2023":"زميل أقدم · توصية على لينكدإن · مارس 2023",
+"Google · Issued Jul 2024 · Credential ID 305342438":"Google · صدرت في يوليو 2024 · رقم الشهادة 305342438","Verify credential":"التحقق من الشهادة",
+"Or send me a message here":"أو أرسل لي رسالة من هنا","Your name":"اسمك","Your email":"بريدك الإلكتروني","Company or role (optional)":"الشركة أو الوظيفة (اختياري)","Message":"الرسالة","Send message":"إرسال الرسالة","Your message goes straight to my email.":"تصل رسالتك مباشرة إلى بريدي الإلكتروني.",
 "CV":"السيرة","Email":"البريد"};
 const orig=new Map();let lang='en';
 function setLang(l){lang=l;const ar=l=='ar',h=document.documentElement;h.lang=l;h.dir=ar?'rtl':'ltr';
@@ -339,21 +362,14 @@ if(new URLSearchParams(location.search).get('lang')=='ar')saved='ar';
 if(saved=='ar')setLang('ar');
 </script>
 <script>
-/* ===== galaxy starfield ===== */
-(()=>{const c=document.getElementById('galaxy');if(!c)return;const x=c.getContext('2d'),rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
-let w,h,dpr,st=[],sh=null,next=3000,t0=performance.now();
-const cols=['255,255,255','255,255,255','255,255,255','154,243,229','196,181,253','165,180,252'];
-function size(){dpr=Math.min(devicePixelRatio||1,2);w=innerWidth;h=innerHeight;c.width=w*dpr;c.height=h*dpr;x.setTransform(dpr,0,0,dpr,0,0);
-const n=Math.min(w<700?80:190,Math.round(w*h/7000));st=Array.from({length:n},()=>({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.4+.4,a:Math.random()*.5+.5,s:Math.random()*1.6+.4,p:Math.random()*6.28,z:Math.random()*.35+.05,c:cols[Math.random()*cols.length|0]}))}
-function frame(now){const t=(now-t0)/1000;x.clearRect(0,0,w,h);const sy=scrollY;
-for(const s of st){const tw=rm?1:.55+.45*Math.sin(t*s.s+s.p);const yy=((s.y-sy*s.z)%h+h)%h;x.beginPath();x.fillStyle='rgba('+s.c+','+(s.a*tw).toFixed(3)+')';x.arc(s.x,yy,s.r,0,6.283);x.fill();
-if(s.r>1.1){x.fillStyle='rgba('+s.c+','+(s.a*tw*.18).toFixed(3)+')';x.beginPath();x.arc(s.x,yy,s.r*3,0,6.283);x.fill()}}
-if(!rm){if(!sh&&now-t0>next){const f=Math.random()*w*.7+w*.3;sh={x:f,y:Math.random()*h*.4,vx:-7-Math.random()*4,vy:3.5+Math.random()*2,l:0,life:55};next=now-t0+5000+Math.random()*6000}
-if(sh){sh.x+=sh.vx;sh.y+=sh.vy;sh.l++;const a=1-sh.l/sh.life,tx=sh.x-sh.vx*9,ty=sh.y-sh.vy*9,g=x.createLinearGradient(sh.x,sh.y,tx,ty);g.addColorStop(0,'rgba(255,255,255,'+a+')');g.addColorStop(1,'rgba(154,243,229,0)');x.strokeStyle=g;x.lineWidth=1.6;x.beginPath();x.moveTo(sh.x,sh.y);x.lineTo(tx,ty);x.stroke();if(sh.l>sh.life)sh=null}
-requestAnimationFrame(frame)}}
-size();addEventListener('resize',()=>{size();if(rm)frame(performance.now())},{passive:true});
-if(rm)frame(performance.now());else{requestAnimationFrame(frame)}
-})();
+(()=>{const f=document.getElementById('cform'),n=document.getElementById('fnote');if(!f)return;const ar=()=>document.documentElement.lang=='ar';
+const M={sending:['Sending…','جارٍ الإرسال…'],ok:['Thank you! Your message was sent.','شكرًا لك! تم إرسال رسالتك.'],need:['Please fill in your name, email and message.','يرجى إدخال الاسم والبريد الإلكتروني والرسالة.'],fb:['Opening your email app instead…','جارٍ فتح تطبيق البريد بدلًا من ذلك…']};
+const say=(k,c)=>{n.textContent=M[k][ar()?1:0];n.className='fnote '+(c||'')};
+f.addEventListener('submit',async e=>{e.preventDefault();const d=new FormData(f);if(!d.get('name').trim()||!/.+@.+\..+/.test(d.get('email'))||!d.get('message').trim()){say('need','er');return}
+const b=f.querySelector('button');b.disabled=true;say('sending');
+try{const r=await fetch('https://formsubmit.co/ajax/umerilyas667@gmail.com',{method:'POST',headers:{Accept:'application/json'},body:d});const j=await r.json();if(r.ok&&(j.success===true||j.success==='true')){say('ok','ok');f.reset()}else throw 0}
+catch(_){say('fb');location.href='mailto:umerilyas667@gmail.com?subject='+encodeURIComponent('Message from '+d.get('name'))+'&body='+encodeURIComponent(d.get('message')+'\n\n'+d.get('name')+' ('+d.get('email')+')'+(d.get('company')?' · '+d.get('company'):''))}
+b.disabled=false})})();
 </script>
 </body>
 </html>
