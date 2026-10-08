@@ -143,6 +143,409 @@ footer{border-top:1px solid var(--line);padding:26px 0}.ft{display:flex;justify-
 .cform .btn{border:0;cursor:pointer}.fnote{font-size:12px;color:var(--muted);margin-top:12px}.fnote.ok{color:var(--a2)}.fnote.er{color:#ffb4a8}
 @media(max-width:900px){.qg{grid-template-columns:1fr!important}}@media(max-width:560px){.cform .row{grid-template-columns:1fr}.hk{display:none}}
 @media(prefers-reduced-motion:reduce){.mkt .ln{stroke-dashoffset:0;animation:none}.mkt .ar,.mkt circle{opacity:1;animation:none}.tk{animation:none}}
+
+/* ===== recommendation slider ===== */
+.qt{position:relative;display:flex!important;grid-template-columns:none!important;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:6px 2px 12px;-webkit-overflow-scrolling:touch}
+.qt::-webkit-scrollbar{display:none}.qt:focus-visible{outline-offset:6px}
+.qt .quote{flex:0 0 calc(50% - 8px);scroll-snap-align:start;min-width:0}
+.qctl{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:18px}
+.qb{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text);cursor:pointer;display:grid;place-items:center;transition:.25s}
+.qb:hover{border-color:var(--a);color:var(--a);transform:scale(1.06)}
+.qds{display:flex;gap:9px}.qd{width:9px;height:9px;border-radius:99px;border:0;background:rgba(255,255,255,.22);cursor:pointer;padding:0;transition:.3s}
+.qd.on{width:28px;background:var(--a)}
+[dir=rtl] .qb i{transform:scaleX(-1)}
+@media(max-width:900px){.qt .quote{flex-basis:100%}}
+@media(prefers-reduced-motion:reduce){.qb,.qd{transition:none}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="container"><nav aria-label="Main"><a class="brand" href="#home"><img src="logo.jpg" alt="Umer Ilyas logo" width="38" height="38">Umer<em>.</em></a>
+<ul class="nl" id="nl"><li><a href="#about">About</a></li><li><a href="#skills">Expertise</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#campaigns">Campaigns</a></li><li><a href="#tech">Technology</a></li><li><a class="cta-n" href="#contact">Hire me</a></li><li><button class="lang" id="lang" type="button" aria-label="Change language"><i class="fa-solid fa-globe"></i><span>العربية</span></button></li></ul>
+<button class="menu" id="menu" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button></nav></div></header>
+<main id="main">
+<section class="hero" id="home"><svg class="mkt" viewBox="0 0 1440 400" preserveAspectRatio="xMaxYMax slice" aria-hidden="true"><defs><linearGradient id="mg" x1="0" x2="1"><stop offset="0" stop-color="#43d6c5" stop-opacity="0"/><stop offset=".35" stop-color="#43d6c5"/><stop offset="1" stop-color="#9af3e5"/></linearGradient><linearGradient id="mf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#43d6c5" stop-opacity=".22"/><stop offset="1" stop-color="#43d6c5" stop-opacity="0"/></linearGradient></defs><path class="ar" d="M0 365 L130 340 L260 352 L400 300 L540 312 L700 240 L840 262 L1000 180 L1140 200 L1290 100 L1440 48 V400 H0Z" fill="url(#mf)"/><path class="ln" d="M0 365 L130 340 L260 352 L400 300 L540 312 L700 240 L840 262 L1000 180 L1140 200 L1290 100 L1440 48"/><circle cx="700" cy="240" r="7"/><circle cx="1000" cy="180" r="7"/><circle cx="1290" cy="100" r="7"/><circle cx="1428" cy="52" r="9"/></svg>
+<div class="container"><div class="hg"><div>
+<h1>Muhammad<br><span>Umer Ilyas</span></h1>
+<div class="role">DIGITAL MARKETING MANAGER · SEO SPECIALIST · WORDPRESS DEVELOPER · PAID ADS STRATEGIST</div>
+<p class="pitch">I plan the strategy, build the website and run the campaigns, so your digital channel has one accountable owner.</p>
+<p class="lead">5+ years of hands-on experience in SEO, WordPress development, paid advertising and analytics, delivered for UK, UAE and international clients.</p>
+<div class="btns"><a class="btn pri" href="Muhammad-Umer-Ilyas-CV.pdf" download><i class="fa-solid fa-download"></i>Download CV</a>
+<a class="btn out" href="mailto:umerilyas667@gmail.com?subject=Opportunity%20for%20Muhammad%20Umer%20Ilyas&body=Hi%20Umer%2C%0A%0AI%20would%20like%20to%20discuss%20a%20role%3A"><i class="fa-regular fa-envelope"></i>Discuss a role</a>
+<a class="btn out" href="https://www.linkedin.com/in/umer-ilyas786/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a></div>
+<div class="trust"><span><i class="fa-solid fa-circle-check"></i>Currently Digital Marketing Manager</span><span><i class="fa-solid fa-circle-check"></i>Open to relocation</span><span><i class="fa-solid fa-circle-check"></i>English &amp; Urdu</span></div>
+</div><div class="hs"><img class="profile" src="profile.jpg" alt="Portrait of Muhammad Umer Ilyas" width="380" height="490">
+<div class="hk k1"><i class="fa-solid fa-arrow-trend-up"></i><div><b>Organic growth</b><span>SEO · Content · Links</span></div></div><div class="hk k2"><i class="fa-solid fa-bullhorn"></i><div><b>Paid campaigns</b><span>Meta · Google · TikTok</span></div></div>
+<div class="hc"><strong>5+</strong><small>Years of hands-on digital marketing experience</small></div>
+<div class="hm"><b>International experience</b><span>UK · UAE · GCC</span></div></div></div></div></section>
+
+<div class="ticker" aria-hidden="true"><div class="tk"><span>SEO</span><span>Google Ads</span><span>Meta Ads</span><span>TikTok Ads</span><span>CRO</span><span>GA4</span><span>Lead Generation</span><span>Content Strategy</span><span>Social Media</span><span>WordPress</span><span>Analytics</span><span>Technical SEO</span><span>SEO</span><span>Google Ads</span><span>Meta Ads</span><span>TikTok Ads</span><span>CRO</span><span>GA4</span><span>Lead Generation</span><span>Content Strategy</span><span>Social Media</span><span>WordPress</span><span>Analytics</span><span>Technical SEO</span></div></div>
+<div class="stats"><div class="container"><div class="sg"><div class="stat"><strong>5+</strong><span>Years experience</span></div><div class="stat"><strong>20+</strong><span>Projects &amp; client accounts</span></div><div class="stat"><strong>3</strong><span>Paid ad platforms</span></div><div class="stat"><strong>BSSE</strong><span>Technical foundation</span></div></div></div></div>
+
+<section id="value"><div class="container"><div class="eyebrow">What I bring to your team</div><h2 class="st">Four things a hiring manager needs covered.</h2>
+<p class="intro">Most digital roles split strategy, web and ads across different people. I cover all four, which means fewer hand-offs and faster execution.</p>
+<div class="g4 val"><div class="card"><div class="k">Get found</div><h3>Organic visibility</h3><p>Technical, on-page and local SEO plus audits and keyword strategy.</p></div>
+<div class="card"><div class="k">Convert</div><h3>Websites that work</h3><p>WordPress builds, landing pages and speed work focused on enquiries and donations.</p></div>
+<div class="card"><div class="k">Scale</div><h3>Paid campaigns</h3><p>Meta, Google and TikTok Ads for leads, fundraising and enrolments.</p></div>
+<div class="card"><div class="k">Prove</div><h3>Clear reporting</h3><p>GA4, Tag Manager and Search Console used to guide each decision.</p></div></div></div></section>
+
+<section id="about"><div class="container"><div class="eyebrow">About</div><div class="ag"><div><h2 class="st">Marketing thinking.<br>Technical execution.</h2></div><div class="ac">
+<p>I help businesses grow through SEO, paid advertising, high-converting websites and data-driven digital marketing. I'm a Digital Marketing Manager with 5+ years of hands-on experience across SEO, WordPress, Google Ads, Meta Ads, technical SEO and conversion optimisation.</p>
+<p>That technical background lets me diagnose website, tracking and performance problems myself instead of waiting on a developer, then connect the fix to the business goal behind it.</p>
+<p>I have worked across charity, home services, healthcare, technology and e-commerce businesses, with clients and stakeholders in the UK, UAE and GCC.</p>
+<div class="fq"><div><strong>Relocation</strong><span>Open worldwide</span></div><div><strong>Work model</strong><span>On-site · Remote · Hybrid</span></div><div><strong>Languages</strong><span>English (fluent) · Urdu (native)</span></div><div><strong>Focus</strong><span>SEO · Web · Paid Media · Analytics</span></div></div></div></div></div></section>
+
+<section id="skills" style="padding-top:0"><div class="container"><div class="eyebrow">Core expertise</div><h2 class="st">Skills behind the work.</h2><div class="g4" id="sk"></div></div></section>
+
+<section id="experience"><div class="container"><div class="eyebrow">Experience</div><h2 class="st">Professional journey.</h2>
+<div class="tl">
+<div class="job cur"><div class="date">NOV 2024 — PRESENT</div><h3>Digital Marketing Manager</h3><div class="co">SMC Tech · Islamabad, Pakistan</div><p>Lead end-to-end digital marketing across SEO, paid media and WordPress for international clients.</p>
+<ul><li>Manage client websites including SM Trust UK, Al Markaz Ul Islami, SMBF Global, VertexWeb and GenieHeal UK.</li><li>Own SEO strategy, audits and ongoing optimisation.</li><li>Plan and run Meta, Google and TikTok campaigns.</li><li>Manage WordPress websites, landing pages and content calendars.</li><li>Report using GA4 and Search Console to improve organic visibility and lead quality.</li><li>Coordinate with UK and UAE stakeholders and lead SEO, design and content contributors.</li></ul></div>
+<div class="job"><div class="date">FEB 2025 — PRESENT</div><h3>Digital Marketing Manager</h3><div class="co">VertexWeb · Freelance · Manchester, UK (remote)</div><p>Project-based remote work with VertexWeb, a UK digital marketing agency, covering website development, SEO, paid advertising and client projects.</p><ul><li>Build and maintain WordPress and Elementor websites focused on UX, performance and conversions.</li><li>Technical and on-page SEO: audits, keyword research, indexing, internal linking, schema and Core Web Vitals.</li><li>Plan and optimise Meta Ads and Google Ads campaigns with GA4 and conversion tracking.</li></ul></div>
+<div class="job"><div class="date">APR 2024 — DEC 2024</div><h3>Social Media Designer &amp; Manager</h3><div class="co">ProVoice LLC · Freelance · Remote</div><p>Managed social media strategy and content calendars, and designed web graphics, banners and ads for digital campaigns.</p></div>
+<div class="job"><div class="date">SEP 2022 — OCT 2024</div><h3>SEO Specialist &amp; WordPress Developer</h3><div class="co">Outright Pakistan · Islamabad</div><ul><li>Conducted keyword research, technical SEO audits, on-page optimisation and link building.</li><li>Built and optimised WordPress business websites focused on speed, security and conversions.</li><li>Improved Google rankings and organic traffic for UK and global clients.</li><li>Configured WordPress plugins, backups, security and performance tools.</li><li>Delivered measurable growth through SEO-driven content and site optimisation.</li></ul></div>
+<div class="job"><div class="date">NOV 2020 — SEP 2024</div><h3>WordPress Developer &amp; SEO Expert</h3><div class="co">Silver Tech Valley · Haripur, Pakistan</div><p>Built SEO-friendly websites, landing pages and lead-generation funnels, applying CRO and tracking KPIs.</p></div>
+<div class="job"><div class="date">FEB 2020 — SEP 2020</div><h3>Customer Care &amp; IT Support Associate</h3><div class="co">CMPak (Zong) · Islamabad</div><p>Customer support and sales assistance, working with IT teams on troubleshooting and escalations.</p></div></div>
+<div class="card edu"><div class="ic" style="margin:0"><i class="fa-solid fa-graduation-cap"></i></div><div><h3>BS Software Engineering</h3><p>University of Haripur · 2015 — 2019</p></div></div><div class="card edu" style="margin-top:14px"><div class="ic" style="margin:0"><i class="fa-solid fa-certificate"></i></div><div><h3>Fundamentals of Digital Marketing</h3><p>Google · Issued Jul 2024 · Credential ID 305342438</p><a class="vfy" href="https://skillshop.exceedlms.com/student/award/QFJt9n91ebayN5BHqgYp3fzC" target="_blank" rel="noopener"><i class="fa-solid fa-circle-check"></i>Verify credential</a></div></div></div></section>
+
+<section id="recommendation"><div class="container"><div class="eyebrow">Recommendation</div><h2 class="st">What colleagues say.</h2>
+<div class="qwrap"><div class="qg qt" id="qt" tabindex="0" aria-label="Recommendations from colleagues"><figure class="card quote"><i class="fa-solid fa-quote-left qi" aria-hidden="true"></i><blockquote>I had the pleasure of working with Muhammad Umer Ilyas. He is a highly skilled Digital Marketing Manager with strong expertise in SEO, Paid Media, and WordPress Development. His grip on Technical SEO and Google &amp; Meta Ads is exceptional. He is results-driven, professional, and truly understands GCC &amp; International Markets. Highly recommended!</blockquote><figcaption><div><strong>Awais Mir</strong><span>CEO &amp; Co-Founder, ProVoice</span><small>Managed Umer directly · LinkedIn recommendation</small></div><a class="btn out" href="https://www.linkedin.com/in/awais-mir-112a1321b/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>View on LinkedIn</a></figcaption></figure><figure class="card quote"><i class="fa-solid fa-quote-left qi" aria-hidden="true"></i><blockquote>I had the opportunity to work directly under Muhammad Umer Ilyas, CTO at SMC TECH. He is a supportive, knowledgeable, and inspiring leader whose guidance helped me grow both technically and professionally. I truly value his mentorship and highly recommend him as an exceptional technology leader.</blockquote><figcaption><div><strong>Zaid Ahmad</strong><span>Team member</span><small>Reported to Umer directly · LinkedIn recommendation</small></div><a class="btn out" href="https://www.linkedin.com/in/zaid-ahmad-0121a2245/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>View on LinkedIn</a></figcaption></figure><figure class="card quote"><i class="fa-solid fa-quote-left qi" aria-hidden="true"></i><blockquote>I had the opportunity to work with Muhammad Umer at SMC Tech, and I found him to be a highly professional, reliable, and results-driven colleague. He consistently demonstrated strong technical skills, problem-solving ability, and a willingness to take ownership of his work. Umer communicates clearly, works well with the team, and approaches challenges with a positive and solution-oriented mindset. I would highly recommend him to any organization looking for a dedicated and capable professional.</blockquote><figcaption><div><strong>Fahad Gul</strong><span>Team Lead · Full Stack Developer</span><small>Worked with Umer on the same team · LinkedIn recommendation</small></div><a class="btn out" href="https://www.linkedin.com/in/fahad-gul-865481140/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>View on LinkedIn</a></figcaption></figure><figure class="card quote"><i class="fa-solid fa-quote-left qi" aria-hidden="true"></i><blockquote>He is an exceptional WP developer and can bring ideas to life. Such a great person</blockquote><figcaption><div><strong>Jawad Ahmad</strong><span>Marketing Manager · SEO Specialist</span><small>Senior colleague · LinkedIn recommendation · March 2023</small></div><a class="btn out" href="https://www.linkedin.com/in/jawad-ahmad11/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>View on LinkedIn</a></figcaption></figure></div><div class="qctl"><button class="qb" id="qp" type="button" aria-label="Previous recommendation"><i class="fa-solid fa-chevron-left"></i></button><div class="qds" id="qds"></div><button class="qb" id="qn" type="button" aria-label="Next recommendation"><i class="fa-solid fa-chevron-right"></i></button></div></div></div></section>
+
+<section id="projects" style="background:rgba(255,255,255,.015)"><div class="container"><div class="eyebrow">Portfolio</div><h2 class="st">Selected projects.</h2>
+<p class="intro">Each card states my contribution. Filter by area to see the work most relevant to the role you are hiring for.</p>
+<div class="tb" id="tb" role="group" aria-label="Filter projects"></div><div class="g3" id="pj"></div>
+<h3 style="margin-top:44px;font-size:20px">More work</h3><div class="more" id="mp"></div></div></section>
+
+<section id="campaigns"><div class="container"><div class="eyebrow">Paid media</div><h2 class="st">Campaign experience.</h2><p class="intro">Campaigns across fundraising, lead generation, awareness and enrolment objectives.</p><div class="tiles" id="cp"></div></div></section>
+<section id="tech" style="padding-top:0"><div class="container"><div class="eyebrow">Technology</div><h2 class="st">Tools I work with.</h2><p class="intro">A practical stack across websites, SEO, analytics, advertising and front-end development.</p><div class="tiles" id="tc"></div></div></section>
+
+<section><div class="container"><div class="diff"><div class="eyebrow">Why hire me</div><h2 class="st">Marketing thinking. Technical execution.</h2>
+<p>My Software Engineering background helps me understand websites, SEO, analytics, performance and conversion, so problems get fixed at the source while business goals stay in focus.</p>
+<div class="flow"><div class="fs"><b>01</b><h3>Strategy</h3><p>Goals, audience, market.</p></div><div class="fs"><b>02</b><h3>Implementation</h3><p>Build pages, launch campaigns.</p></div><div class="fs"><b>03</b><h3>Measurement</h3><p>GA4, Search Console, ad data.</p></div><div class="fs"><b>04</b><h3>Optimisation</h3><p>Improve what the data shows.</p></div></div></div></div></section>
+
+<section class="cta" id="contact"><div class="container"><div class="eyebrow">Open to the right opportunity</div>
+<h2>Hiring for digital marketing or SEO? Let's talk.</h2>
+<p>Open to Digital Marketing, SEO, Performance Marketing and related roles across Saudi Arabia, GCC, remote and international markets. Relocation available.</p>
+<div class="btns" style="justify-content:center"><a class="btn pri" href="mailto:umerilyas667@gmail.com?subject=Opportunity%20for%20Muhammad%20Umer%20Ilyas"><i class="fa-regular fa-envelope"></i>Email me</a>
+<a class="btn out" href="Muhammad-Umer-Ilyas-CV.pdf" download><i class="fa-solid fa-file-arrow-down"></i>Download CV</a>
+<a class="btn out" href="https://www.linkedin.com/in/umer-ilyas786/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>Connect on LinkedIn</a></div>
+<div class="steps"><span><b>1.</b> Send a message</span><span><b>2.</b> Share the role details</span><span><b>3.</b> We discuss fit and next steps</span></div><form class="card cform" id="cform" novalidate><div class="eyebrow" style="text-align:center">Or send me a message here</div>
+<div class="row"><label>Your name<input name="name" required autocomplete="name"></label><label>Your email<input type="email" name="email" required autocomplete="email"></label></div>
+<label>Company or role (optional)<input name="company"></label>
+<label>Message<textarea name="message" rows="4" required></textarea></label>
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"><input type="hidden" name="_subject" value="New message from your portfolio"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table">
+<button class="btn pri" type="submit"><i class="fa-regular fa-paper-plane"></i>Send message</button><div class="fnote" id="fnote" role="status" aria-live="polite">Your message goes straight to my email.</div></form></div></section>
+</main>
+<footer><div class="container ft"><p>© <span id="yr"></span> Muhammad Umer Ilyas · umerilyas667@gmail.com</p><div class="soc"><a href="https://www.linkedin.com/in/umer-ilyas786/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="mailto:umerilyas667@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a></div></div></footer>
+<div class="float"><a class="btn pri" href="Muhammad-Umer-Ilyas-CV.pdf" download><i class="fa-solid fa-download"></i>CV</a><a class="btn out" href="mailto:umerilyas667@gmail.com?subject=Opportunity%20for%20Muhammad%20Umer%20Ilyas"><i class="fa-regular fa-envelope"></i>Email</a></div>
+<script>
+const $=s=>document.querySelector(s),tg=a=>a.map(x=>`<span class="tag">${x}</span>`).join('');
+$('#sk').innerHTML=[["fa-solid fa-chart-line","SEO & Organic Growth","Technical, on-page and off-page SEO, keyword research, competitor analysis, local and international SEO, link building and audits."],["fa-brands fa-wordpress","WordPress & Web","WordPress, Elementor, Elementor Pro, JetEngine, landing pages, funnels, Core Web Vitals, CRO and maintenance."],["fa-solid fa-bullseye","Performance Marketing","Meta, Google and TikTok Ads for lead generation, fundraising, awareness and course enrolments."],["fa-solid fa-chart-pie","Analytics & Strategy","GA4, Tag Manager, Search Console, SEMrush, Ahrefs, Screaming Frog, Rank Math and performance-led decisions."]].map(c=>`<div class="card"><div class="ic"><i class="${c[0]}"></i></div><h3>${c[1]}</h3><p>${c[2]}</p></div>`).join('');
+const P=[["Charity · UK","SM Trust UK","https://smtrust.org.uk/","Charity website and digital fundraising support across Ramadan, Thalassemia, Food Aid, Clean Water and other campaigns.","Website development, SEO and Meta Ads campaigns.",["WordPress","SEO","Meta Ads","Fundraising"],"web seo ads charity international"],
+["Charity · UK","Al Markaz Ul Islami","https://almarkazulislami.org.uk/","UK Islamic centre website focused on search visibility and donations.","WordPress development, technical SEO, indexing and sitemap fixes.",["WordPress","Technical SEO","Google Search"],"web seo charity international"],
+["Saudi Arabia · Bilingual","Bareeq Al Sharqia","","Contracting company website for a Saudi Arabia-based client, built in both English and Arabic.","Website development of the English and Arabic versions.",["Website","English & Arabic"],"web international"],
+["E-commerce","SMBites","https://smbites.com","E-commerce website for a food business with a wide menu of categories.","E-commerce website development.",["E-commerce","Website"],"web"],
+["Landing page","Medicare enrolment landing page","","High-converting lead-capture landing page for Medicare enrolment.","Design and build with WordPress and Elementor Pro.",["WordPress","Elementor Pro","Lead capture"],"web"],
+["UK digital","VertexWeb","https://vertexweb.co.uk/","UK-focused website with SEO strategy and service-page growth.","WordPress development and SEO.",["WordPress","SEO","UK"],"web seo international"],
+["Health · UK","GenieHeal UK","https://genieheal.com/","UK health and wellness website with ongoing management and marketing.","Website management and digital marketing.",["WordPress","Management","Marketing"],"web international"],
+["Global · SEO","Blacklane","https://www.blacklane.com/","International chauffeur and mobility brand.","Technical SEO work.",["SEO","Technical SEO","International"],"seo international"],
+["Charity · Global","Al-Mustafa Trust","https://www.almustafatrust.org/","Charity organisation supported with search and paid campaigns.","SEO, Search Console, GA4 and Meta Ads.",["SEO","Meta Ads","GA4"],"seo ads charity international"],
+["Global · Agency work","Outright LLC / Outright Pakistan","","SEO and WordPress client delivery for UK and global projects.","WordPress, technical SEO and keyword research.",["SEO","WordPress","Technical SEO"],"seo web international"],
+["Platform","Muslim Soulmate","","Profile-based platform built on WordPress.","Platform development with JetEngine and SEO.",["WordPress","JetEngine","SEO"],"web seo"],
+["Healthcare · Pakistan","Sardar Eye Clinic & Optics","","Local clinic and optics business online presence.","Website, branding and digital presence.",["Website","Branding"],"web"],
+["Home services","Pure Home Fix","","Service business website with paid advertising.","Website, Meta Ads creatives and campaign strategy.",["Website","Meta Ads"],"web ads"]];
+const F=[["all","All"],["seo","SEO"],["web","Web development"],["ads","Paid ads"],["international","International"],["charity","Charity"]];
+$('#tb').innerHTML=F.map((f,i)=>`<button class="flt${i?'':' on'}" data-f="${f[0]}" aria-pressed="${!i}">${f[1]}</button>`).join('');
+$('#pj').innerHTML=P.map((p,i)=>`<article class="card pj" data-c="${p[6]}"><div class="n">${String(i+1).padStart(2,'0')} · ${p[0].toUpperCase()}</div><h3>${p[1]}</h3><p>${p[3]}</p><p class="me"><b>My role:</b> ${p[4]}</p><div class="tags">${tg(p[5])}</div>${p[2]?`<a class="pl" href="${p[2]}" target="_blank" rel="noopener">Visit project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>`:''}</article>`).join('');
+$('#tb').onclick=e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('.flt').forEach(x=>{x.classList.toggle('on',x==b);x.setAttribute('aria-pressed',x==b)});document.querySelectorAll('.pj').forEach(c=>c.classList.toggle('hid',b.dataset.f!='all'&&!c.dataset.c.split(' ').includes(b.dataset.f)))};
+$('#mp').innerHTML=["SMBF Global","ShelterFix","Cypex Media","ProVoice LLC","Globyfy Tech","BitSole Marketing","Dubai Clean","MyHomeRevamp","SMT Mirpur Centre","Al-Mustafa Trust campaigns","SM Trust campaigns","SMC Tech SEO projects"].map(x=>`<span>${x}</span>`).join('');
+const T=a=>a.map(x=>`<div class="tile"><div class="ti"><i class="${x[0]}"></i></div><div><strong>${x[1]}</strong><span>${x[2]}</span></div></div>`).join('');
+$('#cp').innerHTML=T([["fa-brands fa-meta","Meta Ads","Facebook & Instagram"],["fa-brands fa-google","Google Ads","Search & lead campaigns"],["fa-brands fa-tiktok","TikTok Ads","Awareness & acquisition"],["fa-solid fa-filter-circle-dollar","Lead Generation","Funnels & enquiries"],["fa-solid fa-users-viewfinder","Audience Targeting","Segmentation"],["fa-solid fa-hand-holding-heart","Fundraising","Donation campaigns"],["fa-solid fa-moon","Ramadan Campaigns","Seasonal fundraising"],["fa-solid fa-kaaba","Qurbani Campaigns","International audiences"],["fa-solid fa-ribbon","Thalassemia Campaigns","Awareness & fundraising"],["fa-solid fa-graduation-cap","Course Enrolments","Education leads"],["fa-solid fa-location-dot","UK Targeting","Location-based"],["fa-solid fa-earth-asia","GCC Targeting","Saudi · UAE · GCC"]]);
+$('#tc').innerHTML=T([["fa-brands fa-wordpress","WordPress","Website development"],["fa-solid fa-layer-group","Elementor","Page builder"],["fa-solid fa-wand-magic-sparkles","Elementor Pro","Advanced builds"],["fa-solid fa-database","JetEngine","Dynamic content"],["fa-brands fa-google","Google Ads","Paid search"],["fa-brands fa-meta","Meta Ads","Social advertising"],["fa-brands fa-tiktok","TikTok Ads","Paid social"],["fa-solid fa-chart-column","GA4","Web analytics"],["fa-solid fa-tags","Tag Manager","Tracking & tags"],["fa-solid fa-magnifying-glass-chart","Search Console","Search performance"],["fa-solid fa-chart-line","SEMrush","SEO intelligence"],["fa-solid fa-link","Ahrefs","Backlinks & research"],["fa-solid fa-spider","Screaming Frog","Technical SEO"],["fa-solid fa-arrow-trend-up","Rank Math","WordPress SEO"],["fa-solid fa-gauge-high","PageSpeed Insights","Performance"],["fa-solid fa-stopwatch","GTmetrix","Speed testing"],["fa-brands fa-html5","HTML","Web structure"],["fa-brands fa-css3-alt","CSS","Styling"],["fa-brands fa-js","JavaScript","Interactions"],["fa-brands fa-php","PHP","WordPress development"]]);
+const nl=$('#nl'),mb=$('#menu');mb.onclick=()=>{const o=nl.classList.toggle('o');mb.setAttribute('aria-expanded',o)};nl.onclick=e=>{if(e.target.tagName=='A')nl.classList.remove('o')};
+const L=[...nl.querySelectorAll('a')];document.querySelectorAll('main section[id]').forEach(s=>new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)L.forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+s.id))}),{rootMargin:'-45% 0px -50% 0px'}).observe(s));
+$('#yr').textContent=new Date().getFullYear();
+</script>
+<script>
+/* ===== language (EN / AR) ===== */
+const AR={"About":"نبذة عني","Expertise":"الخبرات","Experience":"الخبرة","Projects":"المشاريع","Campaigns":"الحملات","Technology":"التقنيات","Hire me":"وظّفني",
+"Muhammad":"محمد","Umer Ilyas":"عمر إلياس","Open to roles · Saudi Arabia · Remote · International":"متاح لفرص العمل · السعودية · عن بُعد · دولي",
+"DIGITAL MARKETING MANAGER · SEO SPECIALIST · WORDPRESS DEVELOPER · PAID ADS STRATEGIST":"مدير تسويق رقمي · أخصائي SEO · مطوّر ووردبريس · خبير إعلانات مدفوعة",
+"I plan the strategy, build the website and run the campaigns, so your digital channel has one accountable owner.":"أضع الاستراتيجية، وأبني الموقع، وأدير الحملات، ليكون لقناتك الرقمية مسؤول واحد.",
+"5+ years of hands-on experience in SEO, WordPress development, paid advertising and analytics, delivered for UK, UAE and international clients.":"أكثر من 5 سنوات من الخبرة العملية في تحسين محركات البحث وتطوير ووردبريس والإعلانات المدفوعة والتحليلات، لعملاء في بريطانيا والإمارات ودوليًا.",
+"Download CV":"تحميل السيرة الذاتية","Discuss a role":"ناقش فرصة عمل","LinkedIn":"لينكدإن","Currently Digital Marketing Manager":"حاليًا مدير التسويق الرقمي","Open to relocation":"متاح للانتقال","English & Urdu":"الإنجليزية والأردية",
+"Years of hands-on digital marketing experience":"سنوات من الخبرة العملية في التسويق الرقمي","International experience":"خبرة دولية","UK · UAE · GCC":"بريطانيا · الإمارات · الخليج",
+"Years experience":"سنوات الخبرة","Projects & client accounts":"مشاريع وحسابات عملاء","Paid ad platforms":"منصات إعلانية مدفوعة","Technical foundation":"أساس تقني",
+"What I bring to your team":"ما أقدمه لفريقك","Four things a hiring manager needs covered.":"أربعة أمور يحتاجها كل مدير توظيف.",
+"Most digital roles split strategy, web and ads across different people. I cover all four, which means fewer hand-offs and faster execution.":"غالبًا ما تتوزع الاستراتيجية والويب والإعلانات على عدة أشخاص. أنا أغطي الجوانب الأربعة، ما يعني تسليمات أقل وتنفيذًا أسرع.",
+"Get found":"ليُعثر عليك","Convert":"حوّل الزوار","Scale":"وسّع النمو","Prove":"أثبت النتائج","Organic visibility":"الظهور العضوي","Websites that work":"مواقع تحقق نتائج","Paid campaigns":"حملات مدفوعة","Clear reporting":"تقارير واضحة",
+"Technical, on-page and local SEO plus audits and keyword strategy.":"تحسين تقني وداخلي ومحلي لمحركات البحث مع التدقيق واستراتيجية الكلمات المفتاحية.",
+"WordPress builds, landing pages and speed work focused on enquiries and donations.":"بناء مواقع ووردبريس وصفحات هبوط وتحسين السرعة بهدف زيادة الاستفسارات والتبرعات.",
+"Meta, Google and TikTok Ads for leads, fundraising and enrolments.":"إعلانات ميتا وجوجل وتيك توك لجذب العملاء المحتملين وجمع التبرعات وزيادة التسجيل.",
+"GA4, Tag Manager and Search Console used to guide each decision.":"استخدام GA4 وTag Manager وSearch Console لتوجيه كل قرار.",
+"Marketing thinking.":"تفكير تسويقي.","Technical execution.":"تنفيذ تقني.","Marketing thinking. Technical execution.":"تفكير تسويقي. تنفيذ تقني.",
+"I'm a digital marketing professional with a Software Engineering degree and 5+ years of practical experience across SEO, WordPress, paid advertising and analytics.":"أنا متخصص في التسويق الرقمي أحمل شهادة في هندسة البرمجيات، ولدي أكثر من 5 سنوات من الخبرة العملية في SEO وووردبريس والإعلانات المدفوعة والتحليلات.",
+"That technical background lets me diagnose website, tracking and performance problems myself instead of waiting on a developer, then connect the fix to the business goal behind it.":"تتيح لي خلفيتي التقنية تشخيص مشاكل الموقع والتتبع والأداء بنفسي دون انتظار مطوّر، ثم ربط الحل بالهدف التجاري الذي يقف خلفه.",
+"I have worked with clients and stakeholders in the UK and UAE, and I understand how GCC audiences search and respond to campaigns.":"عملت مع عملاء وأصحاب مصلحة في بريطانيا والإمارات، وأفهم كيف يبحث جمهور الخليج ويتفاعل مع الحملات.",
+"Relocation":"الانتقال","Open worldwide":"منفتح على الانتقال حول العالم","Work model":"نمط العمل","On-site · Remote · Hybrid":"حضوري · عن بُعد · هجين","Languages":"اللغات","English · Urdu":"الإنجليزية · الأردية","Focus":"التركيز","SEO · Web · Paid Media · Analytics":"SEO · الويب · الإعلانات المدفوعة · التحليلات",
+"Core expertise":"الخبرات الأساسية","Skills behind the work.":"المهارات وراء العمل.","SEO & Organic Growth":"SEO والنمو العضوي","WordPress & Web":"ووردبريس والويب","Performance Marketing":"التسويق بالأداء","Analytics & Strategy":"التحليلات والاستراتيجية",
+"Technical, on-page and off-page SEO, keyword research, competitor analysis, local and international SEO, link building and audits.":"SEO تقني وداخلي وخارجي، بحث الكلمات المفتاحية، تحليل المنافسين، SEO محلي ودولي، بناء الروابط والتدقيق.",
+"WordPress, Elementor, Elementor Pro, JetEngine, landing pages, funnels, Core Web Vitals, CRO and maintenance.":"ووردبريس، Elementor وElementor Pro وJetEngine، صفحات الهبوط، المسارات، Core Web Vitals، تحسين التحويل والصيانة.",
+"Meta, Google and TikTok Ads for lead generation, fundraising, awareness and course enrolments.":"إعلانات ميتا وجوجل وتيك توك لتوليد العملاء المحتملين وجمع التبرعات والتوعية والتسجيل في الدورات.",
+"GA4, Tag Manager, Search Console, SEMrush, Ahrefs, Screaming Frog, Rank Math and performance-led decisions.":"GA4 وTag Manager وSearch Console وSEMrush وAhrefs وScreaming Frog وRank Math وقرارات قائمة على الأداء.",
+"Professional journey.":"المسيرة المهنية.","NOV 2024 — PRESENT":"نوفمبر 2024 — الحاضر","SEP 2022 — OCT 2024":"سبتمبر 2022 — أكتوبر 2024","NOV 2020 — SEP 2024":"نوفمبر 2020 — سبتمبر 2024","FEB 2020 — SEP 2020":"فبراير 2020 — سبتمبر 2020",
+"Digital Marketing Manager":"مدير التسويق الرقمي","SEO Specialist & WordPress Developer":"أخصائي SEO ومطوّر ووردبريس","WordPress Developer & SEO Expert":"مطوّر ووردبريس وخبير SEO","Customer Care & IT Support Associate":"موظف خدمة عملاء ودعم تقني",
+"SMC Tech · Islamabad, Pakistan":"SMC Tech · إسلام آباد، باكستان","Outright Pakistan · Islamabad":"Outright Pakistan · إسلام آباد","Silver Tech Valley · Haripur, Pakistan":"Silver Tech Valley · هريبور، باكستان","CMPak (Zong) · Islamabad":"CMPak (Zong) · إسلام آباد",
+"Lead end-to-end digital marketing across SEO, paid media and WordPress for international clients.":"أقود التسويق الرقمي من البداية للنهاية عبر SEO والإعلانات المدفوعة ووردبريس لعملاء دوليين.",
+"Own SEO strategy, audits and ongoing optimisation.":"أتولى استراتيجية SEO والتدقيق والتحسين المستمر.","Plan and run Meta, Google and TikTok campaigns.":"أخطط وأدير حملات ميتا وجوجل وتيك توك.",
+"Manage WordPress websites, landing pages and content calendars.":"أدير مواقع ووردبريس وصفحات الهبوط وتقاويم المحتوى.","Report using GA4 and Search Console to improve organic visibility and lead quality.":"أعدّ التقارير عبر GA4 وSearch Console لتحسين الظهور العضوي وجودة العملاء المحتملين.",
+"Coordinate with UK and UAE stakeholders and lead SEO, design and content contributors.":"أنسّق مع أصحاب المصلحة في بريطانيا والإمارات وأقود فريق SEO والتصميم والمحتوى.",
+"Delivered technical SEO, keyword research, on-page optimisation, link building and WordPress development for UK and global clients.":"نفّذت SEO تقنيًا وبحث الكلمات المفتاحية وتحسين الصفحات وبناء الروابط وتطوير ووردبريس لعملاء في بريطانيا والعالم.",
+"Built SEO-friendly websites, landing pages and lead-generation funnels, applying CRO and tracking KPIs.":"بنيت مواقع وصفحات هبوط ومسارات لتوليد العملاء المحتملين متوافقة مع SEO، مع تحسين التحويل ومتابعة مؤشرات الأداء.",
+"Customer support and sales assistance, working with IT teams on troubleshooting and escalations.":"دعم العملاء ومساعدة المبيعات والعمل مع فرق تقنية المعلومات في حل المشكلات والتصعيد.",
+"BS Software Engineering":"بكالوريوس هندسة البرمجيات","University of Haripur · 2015 — 2019":"جامعة هريبور · 2015 — 2019",
+"Portfolio":"الأعمال","Selected projects.":"مشاريع مختارة.","Each card states my contribution. Filter by area to see the work most relevant to the role you are hiring for.":"توضح كل بطاقة مساهمتي. صفِّ حسب المجال لترى الأعمال الأنسب للوظيفة التي توظّف لها.",
+"All":"الكل","Web development":"تطوير الويب","Paid ads":"إعلانات مدفوعة","International":"دولي","Charity":"خيري","My role:":"دوري:","Visit project":"زيارة المشروع","More work":"المزيد من الأعمال",
+"Charity website and digital fundraising support across Ramadan, Thalassemia, Food Aid, Clean Water and other campaigns.":"موقع خيري ودعم لجمع التبرعات رقميًا عبر حملات رمضان والثلاسيميا والإغاثة الغذائية والمياه النظيفة وغيرها.","Website development, SEO and Meta Ads campaigns.":"تطوير الموقع وSEO وحملات إعلانات ميتا.",
+"UK Islamic centre website focused on search visibility and donations.":"موقع مركز إسلامي في بريطانيا يركز على الظهور في البحث والتبرعات.","WordPress development, technical SEO, indexing and sitemap fixes.":"تطوير ووردبريس وSEO تقني وإصلاح الفهرسة وخريطة الموقع.",
+"UK-focused website with SEO strategy and service-page growth.":"موقع موجّه للسوق البريطاني مع استراتيجية SEO ونمو صفحات الخدمات.","WordPress development and SEO.":"تطوير ووردبريس وSEO.",
+"UK health and wellness website with ongoing management and marketing.":"موقع صحة وعافية في بريطانيا مع إدارة وتسويق مستمرين.","Website management and digital marketing.":"إدارة الموقع والتسويق الرقمي.",
+"International chauffeur and mobility brand.":"علامة دولية لخدمات التوصيل بسائق والتنقل.","Technical SEO work.":"أعمال SEO التقني.",
+"Charity organisation supported with search and paid campaigns.":"منظمة خيرية مدعومة بحملات بحث وإعلانات مدفوعة.","SEO, Search Console, GA4 and Meta Ads.":"SEO وSearch Console وGA4 وإعلانات ميتا.",
+"SEO and WordPress client delivery for UK and global projects.":"تنفيذ SEO وووردبريس لمشاريع عملاء في بريطانيا والعالم.","WordPress, technical SEO and keyword research.":"ووردبريس وSEO تقني وبحث الكلمات المفتاحية.",
+"Profile-based platform built on WordPress.":"منصة ملفات شخصية مبنية على ووردبريس.","Platform development with JetEngine and SEO.":"تطوير المنصة باستخدام JetEngine وSEO.",
+"Local clinic and optics business online presence.":"حضور رقمي لعيادة ومحل بصريات محلي.","Website, branding and digital presence.":"الموقع والهوية والحضور الرقمي.",
+"Service business website with paid advertising.":"موقع لشركة خدمات مع إعلانات مدفوعة.","Website, Meta Ads creatives and campaign strategy.":"الموقع وتصاميم إعلانات ميتا واستراتيجية الحملات.",
+"WordPress":"ووردبريس","Fundraising":"جمع التبرعات","Website":"موقع","Branding":"هوية بصرية","Marketing":"تسويق","Management":"إدارة",
+"Paid media":"الإعلانات المدفوعة","Campaign experience.":"الخبرة في الحملات.","Campaigns across fundraising, lead generation, awareness and enrolment objectives.":"حملات تغطي أهداف جمع التبرعات وتوليد العملاء المحتملين والتوعية والتسجيل.",
+"Lead Generation":"توليد العملاء المحتملين","Audience Targeting":"استهداف الجمهور","Ramadan Campaigns":"حملات رمضان","Qurbani Campaigns":"حملات الأضاحي","Thalassemia Campaigns":"حملات الثلاسيميا","Course Enrolments":"التسجيل في الدورات","UK Targeting":"استهداف بريطانيا","GCC Targeting":"استهداف الخليج",
+"Facebook & Instagram":"فيسبوك وإنستغرام","Search & lead campaigns":"حملات البحث والعملاء المحتملين","Awareness & acquisition":"التوعية واكتساب العملاء","Funnels & enquiries":"مسارات واستفسارات","Segmentation":"تقسيم الجمهور","Donation campaigns":"حملات التبرع","Seasonal fundraising":"جمع تبرعات موسمي","International audiences":"جمهور دولي","Awareness & fundraising":"توعية وجمع تبرعات","Education leads":"عملاء محتملون للتعليم","Location-based":"حسب الموقع","Saudi · UAE · GCC":"السعودية · الإمارات · الخليج",
+"Tools I work with.":"الأدوات التي أعمل بها.","A practical stack across websites, SEO, analytics, advertising and front-end development.":"مجموعة أدوات عملية تشمل المواقع وSEO والتحليلات والإعلانات وتطوير الواجهات الأمامية.",
+"Website development":"تطوير المواقع","Page builder":"منشئ صفحات","Advanced builds":"بناء متقدم","Dynamic content":"محتوى ديناميكي","Paid search":"بحث مدفوع","Social advertising":"إعلانات اجتماعية","Paid social":"إعلانات اجتماعية مدفوعة","Web analytics":"تحليلات الويب","Tracking & tags":"التتبع والوسوم","Search performance":"أداء البحث","SEO intelligence":"ذكاء SEO","Backlinks & research":"الروابط والأبحاث","Technical SEO":"SEO تقني","WordPress SEO":"SEO لووردبريس","Performance":"الأداء","Speed testing":"اختبار السرعة","Web structure":"هيكلة الويب","Styling":"التنسيق","Interactions":"التفاعلات","WordPress development":"تطوير ووردبريس",
+"Why hire me":"لماذا أنا","My Software Engineering background helps me understand websites, SEO, analytics, performance and conversion, so problems get fixed at the source while business goals stay in focus.":"تساعدني خلفيتي في هندسة البرمجيات على فهم المواقع وSEO والتحليلات والأداء والتحويل، فتُحل المشكلات من جذورها مع إبقاء الأهداف التجارية في المقدمة.",
+"Strategy":"الاستراتيجية","Goals, audience, market.":"الأهداف والجمهور والسوق.","Implementation":"التنفيذ","Build pages, launch campaigns.":"بناء الصفحات وإطلاق الحملات.","Measurement":"القياس","GA4, Search Console, ad data.":"GA4 وSearch Console وبيانات الإعلانات.","Optimisation":"التحسين","Improve what the data shows.":"تحسين ما تُظهره البيانات.",
+"Open to the right opportunity":"منفتح على الفرصة المناسبة","Hiring for digital marketing or SEO? Let's talk.":"توظّف في التسويق الرقمي أو SEO؟ لنتحدث.",
+"Open to Digital Marketing, SEO, Performance Marketing and related roles across Saudi Arabia, GCC, remote and international markets. Relocation available.":"متاح لوظائف التسويق الرقمي وSEO والتسويق بالأداء والوظائف المرتبطة في السعودية والخليج وعن بُعد والأسواق الدولية. الانتقال متاح.",
+"Email me":"راسلني","Connect on LinkedIn":"تواصل عبر لينكدإن","Send a message":"أرسل رسالة","Share the role details":"شارك تفاصيل الوظيفة","We discuss fit and next steps":"نناقش الملاءمة والخطوات التالية","Recommendation":"توصية","What colleagues say.":"ماذا يقول زملاء العمل.","Awais Mir":"Awais Mir","CEO & Co-Founder, ProVoice":"الرئيس التنفيذي والمؤسس المشارك، ProVoice","Managed Umer directly · LinkedIn recommendation":"أشرف على عمل عمر مباشرة · توصية على لينكدإن","View on LinkedIn":"عرض على لينكدإن",
+"I had the pleasure of working with Muhammad Umer Ilyas. He is a highly skilled Digital Marketing Manager with strong expertise in SEO, Paid Media, and WordPress Development. His grip on Technical SEO and Google & Meta Ads is exceptional. He is results-driven, professional, and truly understands GCC & International Markets. Highly recommended!":"سعدت بالعمل مع محمد عمر إلياس. هو مدير تسويق رقمي عالي المهارة ولديه خبرة قوية في SEO والإعلانات المدفوعة وتطوير ووردبريس. إتقانه لـ SEO التقني وإعلانات جوجل وميتا استثنائي. وهو يركّز على النتائج ومحترف ويفهم أسواق الخليج والأسواق الدولية حقًا. أنصح به بشدة!",
+"Conducted keyword research, technical SEO audits, on-page optimisation and link building.":"أجريت بحث الكلمات المفتاحية وتدقيق SEO التقني وتحسين الصفحات وبناء الروابط.","Built and optimised WordPress business websites focused on speed, security and conversions.":"بنيت وحسّنت مواقع ووردبريس للشركات مع التركيز على السرعة والأمان والتحويل.","Improved Google rankings and organic traffic for UK and global clients.":"حسّنت ترتيب جوجل والزيارات العضوية لعملاء في بريطانيا والعالم.","Configured WordPress plugins, backups, security and performance tools.":"ضبطت إضافات ووردبريس والنسخ الاحتياطي وأدوات الأمان والأداء.","Delivered measurable growth through SEO-driven content and site optimisation.":"حققت نموًا قابلًا للقياس عبر محتوى مبني على SEO وتحسين الموقع.",
+"I help businesses grow through SEO, paid advertising, high-converting websites and data-driven digital marketing. I'm a Digital Marketing Manager with 5+ years of hands-on experience across SEO, WordPress, Google Ads, Meta Ads, technical SEO and conversion optimisation.":"أساعد الشركات على النمو عبر SEO والإعلانات المدفوعة والمواقع عالية التحويل والتسويق الرقمي القائم على البيانات. أنا مدير تسويق رقمي بخبرة عملية تزيد على 5 سنوات في SEO وووردبريس وإعلانات جوجل وميتا وSEO التقني وتحسين التحويل.",
+"I have worked across charity, home services, healthcare, technology and e-commerce businesses, with clients and stakeholders in the UK, UAE and GCC.":"عملت مع جهات خيرية وشركات خدمات منزلية ورعاية صحية وتقنية وتجارة إلكترونية، ومع عملاء وأصحاب مصلحة في بريطانيا والإمارات والخليج.",
+"English (fluent) · Urdu (native)":"الإنجليزية (بطلاقة) · الأردية (لغة أم)",
+"Manage client websites including SM Trust UK, Al Markaz Ul Islami, SMBF Global, VertexWeb and GenieHeal UK.":"أدير مواقع العملاء ومنها SM Trust UK وAl Markaz Ul Islami وSMBF Global وVertexWeb وGenieHeal UK.",
+"FEB 2025 — PRESENT":"فبراير 2025 — الحاضر","APR 2024 — DEC 2024":"أبريل 2024 — ديسمبر 2024","Social Media Designer & Manager":"مصمم ومدير وسائل التواصل الاجتماعي",
+"VertexWeb · Freelance · Manchester, UK (remote)":"VertexWeb · عمل حر · مانشستر، بريطانيا (عن بُعد)","ProVoice LLC · Freelance · Remote":"ProVoice LLC · عمل حر · عن بُعد",
+"Project-based remote work with VertexWeb, a UK digital marketing agency, covering website development, SEO, paid advertising and client projects.":"عمل عن بُعد بنظام المشاريع مع VertexWeb، وكالة تسويق رقمي بريطانية، يشمل تطوير المواقع وSEO والإعلانات المدفوعة ومشاريع العملاء.",
+"Build and maintain WordPress and Elementor websites focused on UX, performance and conversions.":"بناء وصيانة مواقع ووردبريس وElementor مع التركيز على تجربة المستخدم والأداء والتحويل.",
+"Technical and on-page SEO: audits, keyword research, indexing, internal linking, schema and Core Web Vitals.":"SEO تقني وداخلي: تدقيق وبحث كلمات مفتاحية وفهرسة وربط داخلي وبيانات منظمة وCore Web Vitals.",
+"Plan and optimise Meta Ads and Google Ads campaigns with GA4 and conversion tracking.":"تخطيط وتحسين حملات إعلانات ميتا وجوجل مع GA4 وتتبع التحويلات.",
+"Managed social media strategy and content calendars, and designed web graphics, banners and ads for digital campaigns.":"أدرت استراتيجية وسائل التواصل وتقاويم المحتوى، وصممت رسومات الويب واللافتات والإعلانات للحملات الرقمية.",
+"Fundamentals of Digital Marketing":"أساسيات التسويق الرقمي","Google · Issued Jul 2024":"Google · صدرت في يوليو 2024",
+"I had the opportunity to work directly under Muhammad Umer Ilyas, CTO at SMC TECH. He is a supportive, knowledgeable, and inspiring leader whose guidance helped me grow both technically and professionally. I truly value his mentorship and highly recommend him as an exceptional technology leader.":"أتيحت لي فرصة العمل مباشرة تحت قيادة محمد عمر إلياس، CTO في SMC TECH. هو قائد داعم وواسع المعرفة وملهم، ساعدني توجيهه على النمو تقنيًا ومهنيًا. أقدّر إرشاده كثيرًا وأوصي به بشدة كقائد تقني استثنائي.",
+"Zaid Ahmad":"Zaid Ahmad","Team member":"عضو في الفريق","Reported to Umer directly · LinkedIn recommendation":"عمل تحت إشراف عمر مباشرة · توصية على لينكدإن",
+"Contracting company website for a Saudi Arabia-based client, built in both English and Arabic.":"موقع لشركة مقاولات لعميل في المملكة العربية السعودية، مبني بالإنجليزية والعربية.","Website development of the English and Arabic versions.":"تطوير النسختين الإنجليزية والعربية من الموقع.","English & Arabic":"الإنجليزية والعربية",
+"E-commerce website for a food business with a wide menu of categories.":"متجر إلكتروني لنشاط أغذية بقائمة واسعة من الأصناف.","E-commerce website development.":"تطوير متجر إلكتروني.","E-commerce":"تجارة إلكترونية",
+"Medicare enrolment landing page":"صفحة هبوط للتسجيل في ميديكير","High-converting lead-capture landing page for Medicare enrolment.":"صفحة هبوط عالية التحويل لجمع العملاء المحتملين للتسجيل في ميديكير.","Design and build with WordPress and Elementor Pro.":"التصميم والبناء باستخدام ووردبريس وElementor Pro.","Lead capture":"جمع العملاء المحتملين",
+"Organic growth":"نمو عضوي","SEO · Content · Links":"SEO · المحتوى · الروابط","Meta · Google · TikTok":"ميتا · جوجل · تيك توك",
+"I had the opportunity to work with Muhammad Umer at SMC Tech, and I found him to be a highly professional, reliable, and results-driven colleague. He consistently demonstrated strong technical skills, problem-solving ability, and a willingness to take ownership of his work. Umer communicates clearly, works well with the team, and approaches challenges with a positive and solution-oriented mindset. I would highly recommend him to any organization looking for a dedicated and capable professional.":"أتيحت لي فرصة العمل مع محمد عمر في SMC Tech، ووجدته زميلًا محترفًا للغاية ويُعتمد عليه ويركّز على النتائج. أظهر باستمرار مهارات تقنية قوية وقدرة على حل المشكلات واستعدادًا لتحمّل مسؤولية عمله. يتواصل عمر بوضوح، ويعمل جيدًا مع الفريق، ويتعامل مع التحديات بعقلية إيجابية تركّز على الحلول. أوصي به بشدة لأي مؤسسة تبحث عن محترف مخلص وكفء.",
+"He is an exceptional WP developer and can bring ideas to life. Such a great person":"هو مطوّر ووردبريس استثنائي ويستطيع تحويل الأفكار إلى واقع. شخص رائع حقًا.",
+"Fahad Gul":"Fahad Gul","Jawad Ahmad":"Jawad Ahmad","Team Lead · Full Stack Developer":"قائد فريق · مطوّر Full Stack","Marketing Manager · SEO Specialist":"مدير تسويق · أخصائي SEO",
+"Worked with Umer on the same team · LinkedIn recommendation":"عمل مع عمر ضمن الفريق نفسه · توصية على لينكدإن","Senior colleague · LinkedIn recommendation · March 2023":"زميل أقدم · توصية على لينكدإن · مارس 2023",
+"Google · Issued Jul 2024 · Credential ID 305342438":"Google · صدرت في يوليو 2024 · رقم الشهادة 305342438","Verify credential":"التحقق من الشهادة",
+"Or send me a message here":"أو أرسل لي رسالة من هنا","Your name":"اسمك","Your email":"بريدك الإلكتروني","Company or role (optional)":"الشركة أو الوظيفة (اختياري)","Message":"الرسالة","Send message":"إرسال الرسالة","Your message goes straight to my email.":"تصل رسالتك مباشرة إلى بريدي الإلكتروني.",
+"CV":"السيرة","Email":"البريد"};
+const orig=new Map();let lang='en';
+function setLang(l){lang=l;const ar=l=='ar',h=document.documentElement;h.lang=l;h.dir=ar?'rtl':'ltr';
+const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>/^(SCRIPT|STYLE)$/.test(n.parentNode.tagName)||!n.nodeValue.trim()?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+const ns=[];while(w.nextNode())ns.push(w.currentNode);
+ns.forEach(n=>{if(!orig.has(n))orig.set(n,n.nodeValue);const o=orig.get(n),k=o.trim();if(ar){if(AR[k])n.nodeValue=o.replace(k,AR[k])}else n.nodeValue=o});
+document.title=ar?'محمد عمر إلياس | مدير تسويق رقمي | أخصائي SEO':'Muhammad Umer Ilyas | Digital Marketing Manager | SEO Specialist';
+const b=document.querySelector('#lang span');b.textContent=ar?'English':'العربية';
+try{localStorage.setItem('lang',l)}catch(e){}}
+document.getElementById('lang').onclick=()=>setLang(lang=='en'?'ar':'en');
+/* ===== motion ===== */
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const prog=document.getElementById('prog');addEventListener('scroll',()=>{prog.style.width=(scrollY/(document.documentElement.scrollHeight-innerHeight)*100)+'%'},{passive:true});
+function count(el){const m=el.textContent.match(/^(\d+)(\+?)$/);if(!m||rm)return;const t=+m[1],x=m[2];let s=null;const f=ts=>{s=s||ts;const p=Math.min((ts-s)/1200,1);el.textContent=Math.round(t*(1-Math.pow(1-p,3)))+x;if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
+if(!rm){const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;el.classList.add('in');if(el.classList.contains('stat'))count(el.querySelector('strong'));io.unobserve(el);setTimeout(()=>el.classList.remove('rv','in'),1000+parseFloat(el.style.getPropertyValue('--d')||0)*1000)}),{threshold:.12});
+document.querySelectorAll('.card,.job,.fs,.tile,.stat,.diff,.fq div,.hero .btns,.hero .trust').forEach((el,i,a)=>{el.classList.add('rv');const sib=[...el.parentNode.children].indexOf(el);el.style.setProperty('--d',Math.min(sib,8)*.07+'s');io.observe(el)})}
+let saved='en';try{saved=localStorage.getItem('lang')||'en'}catch(e){}
+if(new URLSearchParams(location.search).get('lang')=='ar')saved='ar';
+if(saved=='ar')setLang('ar');
+</script>
+<script>
+(()=>{const f=document.getElementById('cform'),n=document.getElementById('fnote');if(!f)return;const ar=()=>document.documentElement.lang=='ar';
+const M={sending:['Sending…','جارٍ الإرسال…'],ok:['Thank you! Your message was sent.','شكرًا لك! تم إرسال رسالتك.'],need:['Please fill in your name, email and message.','يرجى إدخال الاسم والبريد الإلكتروني والرسالة.'],fb:['Opening your email app instead…','جارٍ فتح تطبيق البريد بدلًا من ذلك…']};
+const say=(k,c)=>{n.textContent=M[k][ar()?1:0];n.className='fnote '+(c||'')};
+f.addEventListener('submit',async e=>{e.preventDefault();const d=new FormData(f);if(!d.get('name').trim()||!/.+@.+\..+/.test(d.get('email'))||!d.get('message').trim()){say('need','er');return}
+const b=f.querySelector('button');b.disabled=true;say('sending');
+try{const r=await fetch('https://formsubmit.co/ajax/umerilyas667@gmail.com',{method:'POST',headers:{Accept:'application/json'},body:d});const j=await r.json();if(r.ok&&(j.success===true||j.success==='true')){say('ok','ok');f.reset()}else throw 0}
+catch(_){say('fb');location.href='mailto:umerilyas667@gmail.com?subject='+encodeURIComponent('Message from '+d.get('name'))+'&body='+encodeURIComponent(d.get('message')+'\n\n'+d.get('name')+' ('+d.get('email')+')'+(d.get('company')?' · '+d.get('company'):''))}
+b.disabled=false})})();
+</script>
+<script>
+(()=>{const t=document.getElementById('qt');if(!t)return;const cards=[...t.querySelectorAll('.quote')],ds=document.getElementById('qds'),rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+let cur=0,paused=false,vis=false;
+cards.forEach((c,i)=>{const b=document.createElement('button');b.className='qd';b.type='button';b.setAttribute('aria-label','Show recommendation '+(i+1));b.onclick=()=>go(i);ds.appendChild(b)});
+const dots=[...ds.children];
+const rtl=()=>getComputedStyle(t).direction=='rtl';
+function go(i){cur=(i+cards.length)%cards.length;const tr=t.getBoundingClientRect(),cr=cards[cur].getBoundingClientRect();const d=rtl()?cr.right-tr.right:cr.left-tr.left;t.scrollBy({left:d,behavior:rm?'auto':'smooth'});mark()}
+function mark(){dots.forEach((d,i)=>d.classList.toggle('on',i==cur))}
+let raf;t.addEventListener('scroll',()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>{const tr=t.getBoundingClientRect(),r=rtl();let best=0,bd=1e9;cards.forEach((c,i)=>{const cr=c.getBoundingClientRect(),d=Math.abs(r?cr.right-tr.right:cr.left-tr.left);if(d<bd){bd=d;best=i}});if(best!=cur){cur=best;mark()}})},{passive:true});
+document.getElementById('qp').onclick=()=>go(cur-1);document.getElementById('qn').onclick=()=>go(cur+1);
+t.addEventListener('keydown',e=>{if(e.key=='ArrowRight'){e.preventDefault();go(rtl()?cur-1:cur+1)}if(e.key=='ArrowLeft'){e.preventDefault();go(rtl()?cur+1:cur-1)}});
+const wrap=t.closest('.qwrap');['mouseenter','focusin','touchstart'].forEach(ev=>wrap.addEventListener(ev,()=>paused=true,{passive:true}));['mouseleave','focusout'].forEach(ev=>wrap.addEventListener(ev,()=>paused=false));
+new IntersectionObserver(es=>es.forEach(e=>vis=e.isIntersecting),{threshold:.35}).observe(wrap);
+if(!rm)setInterval(()=>{if(vis&&!paused&&!document.hidden)go(cur+1)},6500);
+mark();})();
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Umer Ilyas | Digital Marketing Manager | SEO Specialist</title>
+<meta name="description" content="Muhammad Umer Ilyas is a Digital Marketing Manager and SEO Specialist with 5+ years of experience in SEO, WordPress, paid advertising, analytics and international digital marketing.">
+<meta name="author" content="Muhammad Umer Ilyas">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/">
+<meta property="og:type" content="website"><meta property="og:title" content="Muhammad Umer Ilyas | Digital Marketing Manager">
+<meta property="og:description" content="SEO, WordPress, paid media and analytics. Open to roles in Saudi Arabia, GCC, UK and remote.">
+<meta property="og:image" content="https://YOUR-DOMAIN.com/profile.jpg"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","name":"Muhammad Umer Ilyas","jobTitle":"Digital Marketing Manager","email":"mailto:umerilyas667@gmail.com","sameAs":["https://www.linkedin.com/in/umer-ilyas786/"],"alumniOf":"University of Haripur","knowsAbout":["SEO","WordPress","Meta Ads","Google Ads","TikTok Ads","GA4"]},{"@type":"WebSite","name":"Muhammad Umer Ilyas"}]}</script>
+<style>
+:root{--bg:#071014;--card:#0d1b20;--text:#f5f8f9;--muted:#98abb2;--a:#43d6c5;--a2:#9af3e5;--line:rgba(255,255,255,.09);--max:1200px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:"DM Sans",sans-serif;background:radial-gradient(circle at 78% 4%,rgba(67,214,197,.13),transparent 28%),var(--bg);color:var(--text);line-height:1.7;padding-bottom:0}
+a{text-decoration:none;color:inherit}img{max-width:100%;display:block}.container{width:min(92%,var(--max));margin:auto}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif}:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+.skip{position:absolute;left:10px;top:-80px}.skip:focus{top:10px;background:var(--a);color:#061013;padding:8px 12px;z-index:2000}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:2.2px;color:var(--a);font-weight:700;margin-bottom:12px}
+.st{font-size:clamp(32px,4vw,50px);line-height:1.08;letter-spacing:-1.6px;margin-bottom:16px}.intro{color:var(--muted);max-width:720px;margin-bottom:40px}
+section{padding:96px 0}
+header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(7,16,20,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font:700 20px "Space Grotesk"}
+.brand img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:1px solid rgba(67,214,197,.55)}.brand em{font-style:normal;color:var(--a)}
+.nl{display:flex;align-items:center;gap:20px;list-style:none}.nl a{font-size:13px;color:#aebdc2;transition:.25s}.nl a:hover,.nl a.on{color:var(--a)}
+.nl .cta-n{padding:9px 14px;border:1px solid rgba(67,214,197,.5);border-radius:8px;color:var(--a)}.menu{display:none;background:none;border:0;color:var(--text);font-size:22px;cursor:pointer}
+.hero{min-height:100vh;padding:130px 0 80px;display:flex;align-items:center}.hg{display:grid;grid-template-columns:1.08fr .92fr;gap:60px;align-items:center}
+.av{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(67,214,197,.3);background:rgba(67,214,197,.07);color:var(--a2);border-radius:30px;padding:7px 14px;font-size:12px;margin-bottom:22px}
+.dot{width:8px;height:8px;background:var(--a);border-radius:50%;box-shadow:0 0 14px var(--a)}
+h1{font-size:clamp(44px,6vw,76px);line-height:1;letter-spacing:-3.5px;margin-bottom:16px}h1 span{color:var(--a)}
+.role{font-size:15px;color:var(--a2);font-weight:600;letter-spacing:.4px;margin-bottom:18px}
+.pitch{font-family:"Space Grotesk";font-size:clamp(20px,2.4vw,26px);line-height:1.3;color:#e6eff1;max-width:640px;margin-bottom:14px}
+.lead{font-size:15px;color:var(--muted);max-width:620px;margin-bottom:26px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 20px;border-radius:9px;font-size:13px;font-weight:700;transition:.3s}
+.pri{background:var(--a);color:#061013}.pri:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(67,214,197,.22)}
+.out{border:1px solid var(--line);color:#e9f1f2}.out:hover{border-color:var(--a);color:var(--a)}
+.trust{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:22px;font-size:12px;color:var(--muted)}.trust i{color:var(--a);margin-right:6px}
+.hs{position:relative;display:flex;justify-content:center}.profile{width:380px;height:490px;object-fit:cover;object-position:center top;border-radius:26px;border:1px solid var(--line);box-shadow:0 25px 80px rgba(0,0,0,.35);background:var(--card)}
+.hc{position:absolute;bottom:-22px;left:8px;width:215px;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:rgba(13,27,32,.94);backdrop-filter:blur(16px)}
+.hc strong{font:700 28px "Space Grotesk";color:var(--a);display:block;line-height:1.1}.hc small{font-size:11px;color:var(--muted)}
+.hm{position:absolute;right:-6px;top:24px;width:160px;padding:14px;border:1px solid rgba(67,214,197,.25);border-radius:15px;background:rgba(10,23,28,.92)}.hm b{font-size:12px;display:block}.hm span{font-size:11px;color:var(--muted)}
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 0}.sg{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{text-align:center;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{font:700 32px "Space Grotesk";color:var(--a);display:block}.stat span{font-size:12px;color:var(--muted)}
+.card{background:linear-gradient(145deg,var(--card),rgba(13,27,32,.68));border:1px solid var(--line);border-radius:17px;padding:24px;transition:.3s}
+.card:hover{transform:translateY(-4px);border-color:rgba(67,214,197,.38)}
+.ic{width:42px;height:42px;border-radius:12px;background:rgba(67,214,197,.1);display:grid;place-items:center;color:var(--a);margin-bottom:16px}
+.card h3{font-size:19px;margin-bottom:8px}.card p{font-size:13px;color:var(--muted)}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.val .k{font-size:11px;color:var(--a);font-weight:700;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:8px}
+.ag{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}.ac p{color:#bdcbd0;margin-bottom:16px}
+.fq{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}.fq div{padding:14px;border:1px solid var(--line);border-radius:12px}.fq strong{font-size:12px;display:block}.fq span{font-size:12px;color:var(--muted)}
+.tl{position:relative;margin-top:36px}.tl:before{content:"";position:absolute;left:9px;top:4px;bottom:0;width:1px;background:var(--line)}
+.job{position:relative;padding-left:48px;margin-bottom:44px}.job:before{content:"";position:absolute;left:0;top:7px;width:19px;height:19px;border:4px solid var(--a);border-radius:50%;background:var(--bg)}
+.date{color:var(--a);font-size:12px;font-weight:700}.job h3{font-size:23px;margin-top:2px}.co{color:#d1dde0;font-size:14px;margin-bottom:8px}.job p{color:var(--muted);max-width:820px;font-size:14px}
+.job ul{margin:12px 0 0 18px;color:#9fb0b6;font-size:13px}.job li{margin:4px 0}.cur{padding:26px 26px 26px 48px;border:1px solid rgba(67,214,197,.3);border-radius:18px;background:linear-gradient(145deg,#0c2026,#0b1519);margin-left:0}.cur:before{left:14px;top:32px}
+.tb{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.flt{border:1px solid var(--line);background:none;color:#aebdc2;padding:8px 14px;border-radius:30px;font:inherit;font-size:12px;cursor:pointer}.flt.on,.flt:hover{background:var(--a);color:#061013;border-color:var(--a)}
+.pj{display:flex;flex-direction:column;min-height:270px}.pj .n{font:600 11px "Space Grotesk";color:rgba(67,214,197,.8);letter-spacing:1px}.pj h3{font-size:21px;margin:12px 0 6px}
+.pj .me{font-size:12px;color:#cfdcdf;margin-top:10px}.pj .me b{color:var(--a)}.tags{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0}.tag{border:1px solid var(--line);padding:4px 9px;border-radius:30px;font-size:10px;color:#b8c7cb}
+.pl{margin-top:auto;color:var(--a);font-size:12px;font-weight:700}.pl:hover{text-decoration:underline}.hid{display:none}
+.more{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.more span{padding:8px 13px;border:1px solid var(--line);border-radius:10px;font-size:12px;color:#c3d0d3;background:var(--card)}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.tile{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid var(--line);border-radius:14px;background:var(--card);transition:.28s;min-height:70px}
+.tile:hover{transform:translateY(-4px);border-color:rgba(67,214,197,.45)}.ti{width:40px;height:40px;min-width:40px;border-radius:11px;display:grid;place-items:center;background:rgba(67,214,197,.1);color:var(--a);font-size:17px}
+.tile strong{display:block;font-size:13px;line-height:1.25}.tile span{display:block;color:var(--muted);font-size:11px;line-height:1.25;margin-top:2px}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:26px}.fs{padding:22px;border:1px solid var(--line);margin-left:-1px;background:rgba(255,255,255,.02)}
+.fs b{font:700 12px "Space Grotesk";color:var(--a);letter-spacing:1.4px}.fs h3{font-size:19px;margin:6px 0}.fs p{font-size:13px;color:var(--muted)}
+.diff{padding:46px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(120deg,rgba(67,214,197,.08),rgba(13,27,32,.75))}.diff p{color:var(--muted);max-width:760px}
+.edu{display:flex;gap:16px;align-items:center}.edu h3{font-size:21px}.edu p{font-size:13px;color:var(--muted)}
+.cta{text-align:center;padding:110px 20px;background:radial-gradient(circle,rgba(67,214,197,.13),transparent 48%)}.cta h2{font-size:clamp(36px,5vw,60px);line-height:1.05;letter-spacing:-2px;max-width:860px;margin:0 auto 16px}
+.cta p{color:var(--muted);max-width:640px;margin:0 auto 26px}.steps{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:12px;color:var(--muted)}.steps b{color:var(--a)}
+footer{border-top:1px solid var(--line);padding:26px 0}.ft{display:flex;justify-content:space-between;align-items:center}.ft p{font-size:12px;color:var(--muted)}
+.soc{display:flex;gap:9px}.soc a{width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--muted)}.soc a:hover{color:var(--a);border-color:var(--a)}
+.float{display:none}
+@media(max-width:1050px){.g4,.tiles{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:850px){.nl{display:none;position:absolute;top:72px;left:0;width:100%;padding:22px;background:rgba(7,16,20,.98);flex-direction:column;border-bottom:1px solid var(--line)}.nl.o{display:flex}.menu{display:block}
+.hg,.ag{grid-template-columns:1fr}.hs{order:-1}.profile{width:280px;height:360px}.sg{grid-template-columns:1fr 1fr;gap:18px}.stat{border:0}.flow{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){section{padding:72px 0}h1{letter-spacing:-2px}.g4,.g3,.tiles,.flow,.fq{grid-template-columns:1fr}.hm{display:none}.diff{padding:28px 22px}.ft{flex-direction:column;gap:14px}.btn{width:100%;justify-content:center}
+.float{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:900;gap:8px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(7,16,20,.95);backdrop-filter:blur(14px);border-top:1px solid var(--line)}.float .btn{flex:1;padding:11px 8px}body{padding-bottom:72px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* ===== motion + RTL ===== */
+#prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--a),var(--a2));z-index:1100}
+[dir=rtl] #prog{left:auto;right:0}
+.lang{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text);padding:7px 12px;border-radius:8px;font:600 12px "Cairo","DM Sans",sans-serif;cursor:pointer;transition:.25s}.lang:hover{border-color:var(--a);color:var(--a)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease var(--d,0s),transform .7s ease var(--d,0s)}.rv.in{opacity:1;transform:none}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(67,214,197,.45)}100%{box-shadow:0 0 0 12px rgba(67,214,197,0)}}
+@keyframes sh{0%,70%{transform:translateX(-120%)}100%{transform:translateX(220%)}}
+@keyframes orb{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-40px,30px) scale(1.12)}}
+@keyframes stp{0%,100%{border-color:var(--line);background:rgba(255,255,255,.02)}12%,25%{border-color:var(--a);background:rgba(67,214,197,.09)}}
+@keyframes bn{0%,100%{transform:translateY(0)}40%{transform:translateY(-4px) rotate(-6deg)}70%{transform:translateY(0) rotate(4deg)}}
+.hero{position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:520px;height:520px;right:-140px;top:60px;border-radius:50%;background:radial-gradient(circle,rgba(67,214,197,.16),transparent 65%);animation:orb 14s ease-in-out infinite;pointer-events:none}
+.hc{animation:fl 6s ease-in-out infinite}.hm{animation:fl 7s ease-in-out -2s infinite}
+.dot{animation:ring 2s infinite}
+.pri{position:relative;overflow:hidden}.pri:after{content:"";position:absolute;top:0;bottom:0;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);animation:sh 4.5s infinite}
+.ic{animation:ring 3.2s infinite}.card:hover .ic i,.tile:hover .ti i{animation:bn .7s ease}
+.tile.rv.in:hover,.card.rv.in:hover{transform:translateY(-4px)}
+.fs:nth-child(1){animation:stp 8s infinite}.fs:nth-child(2){animation:stp 8s 2s infinite}.fs:nth-child(3){animation:stp 8s 4s infinite}.fs:nth-child(4){animation:stp 8s 6s infinite}
+.cur:before{animation:ring 2s infinite}
+.hs:before{content:"";position:absolute;inset:-14px;border-radius:34px;background:conic-gradient(from 0deg,transparent,rgba(67,214,197,.35),transparent 40%);filter:blur(18px);opacity:.6;z-index:0}.profile{position:relative;z-index:1}.hc,.hm{z-index:2}
+[dir=rtl] body,[dir=rtl] h1,[dir=rtl] h2,[dir=rtl] h3,[dir=rtl] .brand,[dir=rtl] .btn,[dir=rtl] .pitch{font-family:"Cairo","DM Sans",sans-serif}
+[dir=rtl] h1,[dir=rtl] .st,[dir=rtl] .cta h2,[dir=rtl] .role,[dir=rtl] .eyebrow,[dir=rtl] .val .k{letter-spacing:0;text-transform:none}
+[dir=rtl] h1{line-height:1.15;font-size:clamp(38px,5vw,62px)}.stat strong,.hc strong,.brand{direction:ltr;unicode-bidi:isolate}[dir=rtl] body{line-height:1.85}
+[dir=rtl] .tl:before{left:auto;right:9px}[dir=rtl] .job{padding-left:0;padding-right:48px}[dir=rtl] .job:before{left:auto;right:0}
+[dir=rtl] .cur{padding:26px 48px 26px 26px}[dir=rtl] .cur:before{left:auto;right:14px}[dir=rtl] .job ul{margin:12px 18px 0 0}
+[dir=rtl] .hc{left:auto;right:8px}[dir=rtl] .hm{right:auto;left:-6px}[dir=rtl] .pi,[dir=rtl] .pl i{transform:scaleX(-1)}
+@media(max-width:850px){.lang{margin-top:4px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important}.rv{opacity:1;transform:none}}
+.quote{position:relative;padding:44px 48px;margin:0;background:linear-gradient(135deg,rgba(67,214,197,.09),var(--card))}.quote .qi{position:absolute;top:26px;left:30px;font-size:34px;color:var(--a);opacity:.35}
+.quote blockquote{font-family:"Space Grotesk",sans-serif;font-size:clamp(19px,2.3vw,25px);line-height:1.5;color:#e8f1f2;margin:20px 0 28px;padding-left:6px}
+.quote figcaption{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px}
+.quote strong{display:block;font-size:16px}.quote span{display:block;font-size:13px;color:var(--a2)}.quote small{display:block;font-size:12px;color:var(--muted)}
+[dir=rtl] .quote .qi{left:auto;right:30px}[dir=rtl] .quote blockquote{padding:0 6px 0 0}[dir=rtl] .quote blockquote{font-family:"Cairo",sans-serif;line-height:1.8}
+@media(max-width:560px){.quote{padding:36px 22px}}
+.qg{display:grid;grid-template-columns:1.25fr 1fr;gap:16px}.qg .quote{padding:40px 34px}@media(max-width:900px){.qg{grid-template-columns:1fr}}
+
+
+/* ===== digital marketing theme ===== */
+.hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(67,214,197,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(67,214,197,.05) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:linear-gradient(to bottom,#000 20%,transparent 92%);mask-image:linear-gradient(to bottom,#000 20%,transparent 92%);pointer-events:none}
+.hero .container{position:relative;z-index:1}
+.mkt{position:absolute;left:0;right:0;bottom:0;width:100%;height:46%;pointer-events:none;opacity:.55}
+.mkt .ln{fill:none;stroke:url(#mg);stroke-width:3;stroke-dasharray:2400;stroke-dashoffset:2400;animation:draw 3.8s .4s ease forwards}
+.mkt .ar{opacity:0;animation:fade 1.6s 2.4s ease forwards}.mkt circle{fill:#071014;stroke:#43d6c5;stroke-width:3;opacity:0;animation:fade .6s ease forwards}
+.mkt circle:nth-of-type(1){animation-delay:1.2s}.mkt circle:nth-of-type(2){animation-delay:1.9s}.mkt circle:nth-of-type(3){animation-delay:2.6s}.mkt circle:nth-of-type(4){animation-delay:3.3s;fill:#43d6c5}
+@keyframes draw{to{stroke-dashoffset:0}}@keyframes fade{to{opacity:1}}
+.hk{position:absolute;z-index:2;display:flex;align-items:center;gap:10px;padding:11px 14px;border:1px solid rgba(67,214,197,.28);border-radius:14px;background:rgba(10,23,28,.92);backdrop-filter:blur(14px);font-size:12px}
+.hk i{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(67,214,197,.12);color:var(--a)}.hk b{display:block;font-size:12px}.hk span{color:var(--muted);font-size:11px}
+.hk.k1{left:-34px;top:42%;animation:fl 7s ease-in-out -1s infinite}.hk.k2{right:-24px;bottom:96px;animation:fl 8s ease-in-out -3s infinite}
+.ticker{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(67,214,197,.04);padding:14px 0;direction:ltr}
+.tk{display:flex;width:max-content;animation:tick 42s linear infinite}.tk span{display:inline-flex;align-items:center;gap:14px;padding:0 22px;font:600 13px "Space Grotesk",sans-serif;letter-spacing:1.2px;color:#b9c9cd;text-transform:uppercase;white-space:nowrap}
+.tk span:after{content:"\25C6";color:var(--a);font-size:8px}@keyframes tick{to{transform:translateX(-50%)}}
+.qg{grid-template-columns:1fr 1fr!important}.qg .quote{padding:38px 30px 28px}.qg .quote blockquote{font-size:clamp(16px,1.5vw,18.5px);line-height:1.6;margin:18px 0 22px}
+.qg .quote figcaption{margin-top:auto}.qg .quote{display:flex;flex-direction:column}.qg .btn{padding:9px 14px}
+.vfy{display:inline-flex;gap:7px;align-items:center;margin-top:8px;font-size:12px;font-weight:700;color:var(--a)}.vfy:hover{text-decoration:underline}
+.cform{max-width:640px;margin:44px auto 0;text-align:start;padding:30px}.cform .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cform label{display:block;font-size:12px;font-weight:600;color:#c9d6d9;margin-bottom:14px}.cform input,.cform textarea{display:block;width:100%;margin-top:6px;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);font:inherit;font-size:14px}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--a);box-shadow:0 0 0 3px rgba(67,214,197,.14)}.cform textarea{resize:vertical}
+.cform .btn{border:0;cursor:pointer}.fnote{font-size:12px;color:var(--muted);margin-top:12px}.fnote.ok{color:var(--a2)}.fnote.er{color:#ffb4a8}
+@media(max-width:900px){.qg{grid-template-columns:1fr!important}}@media(max-width:560px){.cform .row{grid-template-columns:1fr}.hk{display:none}}
+@media(prefers-reduced-motion:reduce){.mkt .ln{stroke-dashoffset:0;animation:none}.mkt .ar,.mkt circle{opacity:1;animation:none}.tk{animation:none}}
 </style>
 </head>
 <body>
